@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="关键字用英文逗号隔开">
+<meta name="description" content="说明">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0" />
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=9cc5226013401e32de0eca4adb98ddb8"></script> 
+<title>门店详情-地图</title>
+<link rel="stylesheet" type="text/css" href="css/list.css">
+</head>
+<body style="background: #efeae7">
+    <div class="wrap-list">	
+    	<div class="map-list">
+    			<p class="text5">
+    				<span class="s-left">酷圣石1111</span>
+    				<span class="s-right">400m</span>
+    			</p>
+    			<div class="map-box">
+    				<img src="images/map.jpg" alt="">
+    				<div id="container"></div>
+    			</div>
+    			 
+    			<p class="text4">
+    				地址：徐家汇路618号日月光中心广场B2楼(近瑞金二路)
+    			</p>
+    			<p class="text4">
+    				电话：021-34605346
+    			</p>
+    			<p class="text4">
+    				时间：10:00-21:00
+    			</p>
+    	</div>
+    	
+    </div>
+</body>
+</html>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js" ></script>
+<script>
+setFontsize(12)
+
+if(navigator.geolocation){
+	     var getOptions = {
+	          enableHighAccuracy:true,
+	          timeout:10000,
+	          maximumAge:0
+	     };
+	     navigator.geolocation.getCurrentPosition(getSuccess, getError, getOptions);
+	     //成功回调
+	     function getSuccess(position){
+	          var longitude=position.coords.longitude
+	          var latitude=position.coords.latitude
+	          maper(longitude,latitude,container)
+	     }
+	     //失败回调
+	     function getError(error){
+	          switch(error.code){
+	               case error.TIMEOUT:
+	                    console.log('定位超时');
+	                    break;
+	               case error.PERMISSION_DENIED:
+	                    console.log('用户拒绝提供地理位置');
+	                    break;
+	               case error.POSITION_UNAVAILABLE:
+	                    console.log('地理位置不可用');
+	                    break;
+	               default:
+	                    break;
+	          }
+	     }
+	      //navigator.geolocation.getCurrentPosition(getSuccess, getError, getOptions);  
+
+     //var watcher_id = navigator.geolocation.watchPosition(getSuccess, getError, getOptions);  
+     //clearwatch用于终止watchPosition方法  
+     //navigator.geolocation.clearWatch(watcher_id);             
+	}
+
+	function maper(longitude,latitude,idname){
+	    var map = new AMap.Map(idname,{
+	                resizeEnable: true,
+	                dragEnable: false,
+	                zoom: 17,
+	        });
+	    var marker = new AMap.Marker({
+	            position: [longitude,latitude],
+	            map:map
+	        });  
+	        marker.setMap(map);
+	        map.setCenter(marker.getPosition()) 
+	}
+	function setFontsize(standardsize)
+    {
+        ww=$(window).width();
+        var standardNum = 320/standardsize;
+        var fontsize = ww/standardNum;
+        if(fontsize>=20){
+            fontsize=20
+        }
+        $('html').css({'fontSize':fontsize+'px','lineHeight':(fontsize+10)+'px'});
+    }
+</script>

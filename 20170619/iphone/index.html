@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html style="font-size: 18px;">
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-touch-fullscreen" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+	<meta name="description" content="实时对战策略竞技游戏，五分钟的酣畅战斗，快来跟我一起玩吧！">
+	<title>星际冲突_代表星星消灭你！</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrap on" id="page_1" >
+	<a href="javascript:void(0)" title="" class="page_btn"></a>
+	<img src="images/pic_1.png" alt="" class='pic_1'>
+	<p class="msg">
+    	<img src="images/pic_2.png" alt="" class="pic_2">
+        <a href="" class="dl adDownlaod" id="ios_download_mobile">ios下载</a>
+        <a href="" target="_blank" class="dl iosDownlaod" id="android_download_mobile">安卓下载</a><br> 
+	 	<font color="#46cdff">实时对战策略游戏 五分钟解决一场战斗</font>
+    </p>
+</div>
+<div class="wrap on" id="page_2" style="display:none;">
+	<a href="javascript:void(0)" title="" class="page_btn"></a>
+	<span class="lokk"><img src="images/logo.png" class="logo dus delay"></span>
+	<p class="msg">
+    	<img src="images/pic_3.png" alt="" class="pic_3">
+        <a href="http://sapi.ztgame.com/s/a12y" class="dl adDownlaod" id="ios_download_mobile">ios下载</a><a href="http://sapi.ztgame.com/s/a14p" target="_blank" class="dl iosDownlaod" id="android_download_mobile">安卓下载</a><br> 
+	 <font color="#000">实时对战策略游戏 五分钟解决一场战斗</font>
+    </p>
+</div>
+<div id="horizon" class="horizon">
+    <div class="horizon_box">
+        <div class="horizon_pic"><i></i></div>
+        <span>为了更好的体验，请将手机/平板竖过来</span>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+!(function(){
+	function detectOtt(){
+		if(window.orientation==180||window.orientation==0)$("#horizon").hide();
+		if(window.orientation==90||window.orientation==-90)$("#horizon").show();
+	}
+	var ww = Math.min(document.documentElement.clientWidth,document.documentElement.clientHeight);
+	var fontSize = ww / 37.5;
+  	fontSize = fontSize > 18 ? 18 : fontSize;
+  	document.documentElement.style.fontSize = fontSize + 'px';
+	
+	var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+	window.addEventListener(evt, function() {
+		var ww = Math.min(document.documentElement.clientWidth,document.documentElement.clientHeight);
+		var fontSize = ww / 37.5;
+		fontSize = fontSize > 18 ? 18 : fontSize;
+		document.documentElement.style.fontSize = fontSize + 'px';
+		
+		detectOtt();
+	}, false);
+	
+	var device = {
+		Android: function() {  
+			return navigator.userAgent.match(/Android/i) ? true : false;  
+		},  
+		BlackBerry: function() {  
+			return navigator.userAgent.match(/BlackBerry/i) ? true : false;  
+		},  
+		iOS: function() {  
+			return navigator.userAgent.match(/iPad|iPod|iPhone/i) ? true : false;  
+		},
+		iphone: function(){
+			return navigator.userAgent.match(/iPhone/i) ? true : false;  
+		},
+		Windows: function() {  
+			return navigator.userAgent.match(/IEMobile/i) ? true : false;  
+		},  
+		any: function() {  
+			return (device.Android() || device.BlackBerry()  || device.Windows() || device.iOS());  
+		}  
+	};
+	//检测是否是手机端
+	if(device.iOS()){
+		 $(".ios").show();
+	}else{
+		$(".andro").show();	
+	}
+	
+	$(window).load(function(){
+		setTimeout((function(){
+			$('.pic_1').addClass('cfs_bounceInRight')
+			$('.pic_2').addClass('cfs_bounceInLeft')
+			
+		}),500)	
+		$('#page_1 .page_btn').mousedown(function(event) {
+			$('#page_1').hide().siblings('#page_2').fadeIn(500,function(){
+				$(".lokk,#page_2").addClass("on");	
+			})
+		});	
+		$('#page_2 .page_btn').mousedown(function(event) {
+			$('#page_2').hide().siblings('#page_1').fadeIn(500,function(){
+				$('.pic_1').addClass('cfs_bounceInRight')
+				$('.pic_2').addClass('cfs_bounceInLeft')
+				$(".lokk,#page_2").removeClass("on");	
+			})
+		});
+		
+	})
+})()
+</script>
+
+</body>
+</html>

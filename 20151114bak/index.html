@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="关键字用英文逗号隔开">
+<meta name="description" content="说明">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0" />
+<title>乔迪漫画</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="loading">
+            <div class="spinner">
+              <div class="rect1"></div>
+              <div class="rect2"></div>
+              <div class="rect3"></div>
+              <div class="rect4"></div>
+              <div class="rect5"></div>
+              <span>正在加载...</span>
+            </div>
+        </div>
+    <div class="wrap" >
+    	<div class="page page1">
+    		<img src="images/1.jpg" alt="" class="bg">
+    		<div class="main">
+    			<img src="images/1-1.jpg" alt="" class="img1">
+    			<img src="images/ui_1.png" alt="" class="img2">
+    		</div>
+    	</div>
+    	<div class="page page2" style="display:none;">
+    		<img src="images/2.jpg" alt="" class="bg">
+    		<div class="main">
+    			<img src="images/ui_3.png" alt="" class="img3">
+    			<img src="images/ui_4.png" alt="" class="img4">
+    			<img src="images/ui_2.png" alt="" class="img5">
+    			<img src="images/text2.png" alt="" class="text2">
+    		</div>
+    	</div>
+    	<div class="page page3" style="display:none;">
+    		<img src="images/3.jpg" alt="" class="bg">
+    		<div class="main">
+    			<img src="images/ui_5.png" alt="" class="img6">
+    			<img src="images/ui_5.png" alt="" class="img7">
+    			<img src="images/text3.png" alt="" class="text3">
+    		</div>
+    	</div>
+    	<div class="page page4" style="display:none;">
+    		<img src="images/4.jpg" alt="" class="bg">
+    		<div class="main">
+    			<img src="images/ui_6.png" alt="" class="img8">
+    			<img src="images/ui_7.png" alt="" class="img9">
+    			<img src="images/text4.png" alt="" class="text4">
+    		</div>
+    	</div>
+    	<div class="page page5" style="display:none;">
+    		<img src="images/5.jpg" alt="" class="bg">
+    		<div class="main">
+    			<!-- <img src="images/pic_1.jpg" alt="" class="img10"> -->
+    			<img src="images/text5-1.png" alt="" class="text5-1">
+    			<img src="images/text5-2.png" alt="" class="text5-2">
+    			<img src="images/r-1.png" alt="" class="r-1">
+    			<img src="images/r-2.png" alt="" class="r-1 r-2">
+    		</div>
+    	</div>
+    	<div class="page page6 move4" style="display:none;">
+    		<img src="images/6.jpg" alt="" class="bg">
+    		<div class="main">
+    			<img src="images/6-1.jpg" alt="" class="img11">
+                <img src="images/text6.png" alt="" class="text6 text6-1">
+                <img src="images/text6-1.png" alt="" class="text6 text6-2">
+    		</div>
+    	</div>
+    	<!--div class="music">
+	        <div href="" class="videobtn">
+	        <img src="images/music_on.png" alt="" class="imgon">
+	        <img src="images/music_off.png" alt="" class="imgoff" style="display:none;">
+	        <audio src="music.mp3" controls="controls" id='music1'  loop="loop" preload="auto"></audio>
+	        </div>
+	    </div-->
+        <a href="" title="" class="links">跳过</a>
+    </div>
+
+</body>
+</html>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8" ></script>
+<script>
+	window.onload = function(){
+	$("#loading").hide();
+	$(".wrap").fadeIn(2000,function(){
+		$('.img2').delay(500).fadeIn(2000)
+		$('.img1').delay(2500).fadeIn(2000,function(){
+			$('.page1').delay(2500).fadeOut(2000)
+			$('.page2').fadeIn(2500,function(){
+				$('.text2').delay(500).fadeIn(2000)
+				$('.img3').delay(2500).fadeOut(2000)
+				$('.img4').delay(2500).fadeIn(2000,function(){
+					$('.page2').delay(2500).fadeOut(2000)
+					$('.page3').delay(2500).fadeIn(2000,function(){
+						$('.text3').delay(500).fadeIn(2000)
+						$('.img6').delay(2500).fadeOut(2000)
+						$('.img7').delay(2500).fadeIn(2000,function(){
+							$('.page3').delay(2500).fadeOut(2000)
+							$('.page4').delay(2500).fadeIn(2000,function(){
+								$('.text4').delay(500).fadeIn(2000)
+								$('.img8').delay(2500).fadeOut(2000)
+								$('.img9').delay(2500).fadeIn(2000,function(){
+									$('.page4').delay(2500).fadeOut(2000)
+									$('.page5').delay(2500).fadeIn(2000,function(){
+										$('.text5-1').delay(500).fadeIn(2000)
+										$('.text5-2').delay(500).fadeIn(2000)
+										$('.page5').delay(2500).fadeOut(2000)
+										$('.page6').delay(2500).fadeIn(2000,function(){
+                                            $('.text6-1').delay(500).fadeIn(2000)
+                                            $('.text6-2').delay(2800).fadeIn(2000)
+											$('.img11').delay(2500).fadeIn(2000)
+                                            //$('.page6').addClass('move4)
+										})
+									})
+								})
+							})
+						})
+					})
+				})
+			})
+		})
+	})
+//var audio = document.createElement("audio");
+  //      audio.src = "music.mp3";
+	//	audio.play();
+		//var index = 0;
+        //audio.addEventListener('ended', function () {
+        	//setTimeout(function () {if(index<100){ audio.play(); index++}}, 500);
+        //}, false);
+        //if(audio!==null){ 
+          //   audio.play();
+            //$('.imgon').click(function(){
+              //  audio.pause();
+                //$(this).hide().siblings('.imgoff').show()
+            //}); 
+              // $('.imgoff').click(function(){
+                //audio.play();
+                //$(this).hide().siblings('.imgon').show()
+           // }); 
+       // }	
+    }
+</script>

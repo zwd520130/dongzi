@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="关键字用英文逗号隔开">
+<meta name="description" content="说明">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0" />
+<title>门店详情</title>
+<link rel="stylesheet" type="text/css" href="css/list.css">
+</head>
+<body style="background: #efeae7">
+    <div class="wrap-list">	
+        <div class="abs">
+            <img src="images/b-bg.jpg" alt="" class="bg">
+            <a class="map_address" href="list-map.html" >
+                <p class="text5">
+                <span class="s-left">酷圣石1111</span>
+                <span class="s-right">400m</span>
+                </p>
+                <p class="text4">我是地址我的地址我是地址我的地址我是地址我的地址我是地址我的地址我是地址我的地址我是地址我的地址</p>
+            </a>
+        </div>
+        <div class="abs">
+            <img src="images/b-bg.jpg" alt="" class="bg">
+            <a class="map_address" href="list-map.html" >
+                <p class="text5">
+                <span class="s-left">酷圣石1111</span>
+                <span class="s-right">400m</span>
+                </p>
+                <p class="text4">我是地址我的地址我是地址我的地址我是地址我的地址</p>
+            </a>
+        </div>
+			
+    	
+
+    	
+    </div>
+</body>
+</html>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js" ></script>
+<script>
+setFontsize(10)
+	function setFontsize(standardsize)
+    {
+        ww=$(window).width();
+        var standardNum = 320/standardsize;
+        var fontsize = ww/standardNum;
+        if(fontsize>=20){
+            fontsize=20
+        }
+        $('html').css({'fontSize':fontsize+'px','lineHeight':(fontsize+10)+'px'});
+    }
+</script>

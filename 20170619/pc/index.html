@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Tencent-TGideas"/>
+<meta name="robots" content="all"/>
+<meta name="Copyright" content="Tencent"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="">
+<meta name="description" content="实时对战策略竞技游戏，五分钟的酣畅战斗，快来跟我一起玩吧！">
+<title>星际冲突_代表星星消灭你！</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrap" id="page_1">
+    	<img src="images/bg_1.jpg" alt="" class="bg">
+    	<div class="main">
+    		<a href="javascript:void(0)" class="page_btn"></a>
+    		<img src="images/pic_1.png" alt="" class="pic_1">
+    		<img src="images/pic_2.png" alt="" class="pic_2">
+    		<p class="p1">实时对战策略游戏 五分钟解决一场战斗</p>
+    		<a href="http://sapi.ztgame.com/s/a12y" class="btn_1"><img src="images/btn_3.png" alt=""></a>
+    		<a href="http://sapi.ztgame.com/s/a12y" class="btn_2"><img src="images/btn_4.png" alt=""></a>
+    		<p class="p2">扫码下载<br><img src="images/ewm.jpg" alt=""></p>
+    	</div>
+    </div>
+    <div class="wrap" id="page_2" style="display:none;">
+    	<img src="images/bg_2.jpg" alt="" class="bg">
+    	<div class="main">
+    		<a href="javascript:void(0)" class="page_btn"></a>
+    		<img src="images/pic_3.png" alt="" class="pic_1">
+    		<img src="images/pic_4.png" alt="" class="pic_2">
+    		<p class="p1">实时对战策略游戏 五分钟解决一场战斗</p>
+    		<a href="http://sapi.ztgame.com/s/a12y" class="btn_1"><img src="images/btn_1.png" alt=""></a>
+    		<a href="http://sapi.ztgame.com/s/a12y" class="btn_2"><img src="images/btn_2.png" alt=""></a>
+    		<p class="p2">扫码下载<br><img src="images/ewm.jpg" alt=""></p>
+    	</div>
+    </div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+		setTimeout((function(){
+			$('#page_1 .pic_1').addClass('cfs_bounceInRight')
+			$('#page_1 .pic_2').addClass('cfs_bounceInLeft')
+			
+		}),500)	
+		$('#page_1 .page_btn').mousedown(function(event) {
+			$('#page_1').hide().siblings('#page_2').fadeIn(500,function(){
+				$('#page_2 .pic_1').addClass('cfs_bounceInUp')
+			})
+		});	
+		$('#page_2 .page_btn').mousedown(function(event) {
+			$('#page_2').hide().siblings('#page_1').fadeIn(500,function(){
+				$('#page_1 .pic_1').addClass('cfs_bounceInRight')
+				$('#page_1 .pic_2').addClass('cfs_bounceInLeft')
+			})
+		});
+	})
+</script>

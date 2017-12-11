@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/**
+ * @coding dongzi (dongzi886@gmail.com)
+ * @date    2015-11-13 18:31:17
+ * @version $Id$
+ */
+html,body,div,ul,li,p{ margin:0;padding:0;}
+html,body{height: 100%; background: #fff}
+body { -webkit-text-size-adjust:none;font-family:tahoma, arial, sans-serif;  color:#000; overflow:hidden;text-align: left;-webkit-appearance:none;}
+table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000;}del,ins{text-decoration:none}p{ margin:0; padding:0}img {-ms-interpolation-mode: bicubic;}
+a:link,a:visited,a:hover,a:active{ text-decoration:none;outline: none;color: #349890;}
+li{ list-style:none;}
+a,select{outline: none;}
+img{ vertical-align:middle; width: 100%;}
+body{background: #d8f6f4;font-family:"Microsoft Yahei";}
+#loading{position: relative;min-width: 320px;max-width: 640px;margin:0 auto;overflow: hidden;}
+.bg{position: relative; height: 100%;}
+.wrap{position: relative;min-width: 320px;max-width: 640px;margin:0 auto;display: none;height: 100%}
+.page{position: absolute;left: 0;top: 0;width: 100%;height: 100%}
+.main{position: absolute;left: 0;top: 0;width: 100%;height: 100%;overflow: hidden;}
+.bg0{position: absolute;width: 100%;height: 100%;left: 0;top: 0}
+#music1{position: absolute;top: -1000%;}
+.music{width: 8%;top:2%;left:3%; position: fixed; z-index: 17}
+.imgon{animation-name: imgon;animation-duration: 1.2s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: normal;animation-play-state: running;	/* Firefox: */	-moz-animation-name: imgon;-moz-animation-duration: 1.2s;-moz-animation-timing-function: linear;-moz-animation-iteration-count: infinite;-moz-animation-direction: normal;-moz-animation-play-state: running;/* Safari 和 Chrome: */-webkit-animation-name: imgon;-webkit-animation-duration: 1.2s;-webkit-animation-timing-function: linear;-webkit-animation-iteration-count: infinite;-webkit-animation-direction: normal;-webkit-animation-play-state: running;}
+@-moz-keyframes imgon /* Firefox */
+{
+	0%   {-moz-transform:rotate(0deg);}
+	25%  {-moz-transform:rotate(90deg);}
+	50%  {-moz-transform:rotate(180deg);}
+	75%  {-moz-transform:rotate(270deg);}
+	100% {-moz-transform:rotate(360deg);}
+}
+@-webkit-keyframes imgon /* Safari 和 Chrome */
+{
+	0%   {-webkit-transform:rotate(0deg);}
+	25%  {-webkit-transform:rotate(90deg);}
+	50%  {-webkit-transform:rotate(180deg);}
+	75%  {-webkit-transform:rotate(270deg);}
+	100% {-webkit-transform:rotate(360deg);}
+}
+@keyframes imgon
+{
+	0%   {transform:rotate(0deg);}
+	25%  {transform:rotate(90deg);}
+	50%  {transform:rotate(180deg);}
+	75%  {transform:rotate(270deg);}
+	100% {transform:rotate(360deg);}
+}
+.img1{position: absolute;z-index: 1;left: 0;top: 0;width: 100%;display: none;height: 100%}
+.img2{position: absolute;z-index: 2;width: 40.6%;right: 4.5%;top:12%;display: none;}
+.img3{position: absolute;left:14.8%;width: 31.8%;top:10%;  }
+.img4{position: absolute;left:17.6%;width: 38.5%;top:18.6%;display: none; }
+.img5{position: absolute;left:20.8%;width: 46.5%;top:61.2%;animation-name: myfirst;
+animation-duration: .5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: running;
+/* Firefox: */
+-moz-animation-name: myfirst;
+-moz-animation-duration: .5s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction: alternate;
+-moz-animation-play-state: running;
+/* Safari 和 Chrome: */
+-webkit-animation-name: myfirst;
+-webkit-animation-duration: .5s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+-webkit-animation-play-state: running;   }
+.img6{position: absolute;left:-8%;width: 30.6%;top:19.9%;  }
+.img7{position: absolute;left:8.4%;width: 37.6%;top:22.9%;display: none;  }
+.img8{position: absolute;left:35.1%;width: 36.7%;top:36.8%;  }
+.img9{position: absolute;left:26%;width: 38.4%;top:38.5%;display: none;  }
+.img10{position: absolute;right: 0;top: 0; width: 43.9%; z-index: 1;
+ }
+.img11{position: absolute;right: 0;top: 0; width:100%; z-index: 1;display: none; height: 100%;}
+.text2{position: absolute;z-index: 10;width:35.4%;left:60.4%;top:34.8%;display: none;}
+.text3{position: absolute;z-index: 10;width:49.3%;left:6.8%;top:56.9%;display: none;}
+.text4{position: absolute;z-index: 10;width:30.3%;left:6.2%;top:8.5%;display: none;}
+.text5-1{position: absolute;z-index: 10;width:21.5%;left:49.6%;top:18.9%;display: none;}
+.text5-2{position: absolute;z-index: 10;width:30.3%;left:26.2%;top:81.4%;display: none;}
+.text6{position: absolute;z-index: 10;width:46.2%;left:9.8%;top:6.9%;display: none;}
+a.links{position: absolute;bottom: 3%;right: 5%;color: #529546;font-size: 1em;line-height: 1em;text-decoration: underline;z-index: 100}
+.r-1{ width:31.2%;left:56.2%;top:25.4%;z-index: 10;position: absolute;    }
+.r-2{
+	animation-name: mytwo;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: running;
+/* Firefox: */
+-moz-animation-name: mytwo;
+-moz-animation-duration: 1s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction: alternate;
+-moz-animation-play-state: running;
+/* Safari 和 Chrome: */
+-webkit-animation-name: mytwo;
+-webkit-animation-duration: 0.8s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+-webkit-animation-play-state: running;
+}
+
+
+
+
+.spinner {margin: 100px auto; width: 60px;height: 60px;text-align: center;font-size: 10px;}
+.spinner > div {background-color: #fbcbd8;height: 100%;width: 6px;
+  display: inline-block;-webkit-animation: stretchdelay 1.2s infinite ease-in-out;animation: stretchdelay 1.2s infinite ease-in-out;}
+.spinner .rect2 {-webkit-animation-delay: -1.1s;animation-delay: -1.1s;}
+.spinner .rect3 {-webkit-animation-delay: -1.0s;animation-delay: -1.0s;}
+.spinner .rect4 {-webkit-animation-delay: -0.9s;animation-delay: -0.9s;}
+.spinner .rect5 { -webkit-animation-delay: -0.8s;animation-delay: -0.8s;}
+.spinner span{display:inline-block}
+
+@-webkit-keyframes stretchdelay {
+	  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+	  20% { -webkit-transform: scaleY(1.0) }
+	}
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+@keyframes myfirst
+	{
+		0%   {transform:rotate(-10deg);}
+		100% {transform:rotate(10deg);}
+	}
+@-moz-keyframes myfirst /* Firefox */
+	{
+		0%   {-moz-transform:rotate(-10deg);}
+		100% {-moz-transform:rotate(10deg);}
+	}
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+	{
+		0%   {-webkit-transform:rotate(-10deg);}
+		100% {-webkit-transform:rotate(10deg);}
+	}
+@keyframes mytwo
+	{
+		0% {opacity: 0}
+		1% {opacity: 1}
+		99%{opacity: 1}
+		100% {opacity: 0}
+	}
+
+@-moz-keyframes mytwo /* Firefox */
+	{
+		0% {opacity: 0}
+		25%{opacity: 1}
+		75%{opacity: 1}
+		100% {opacity: 0}
+	}
+
+@-webkit-keyframes mytwo /* Safari 和 Chrome */
+	{
+		0% {opacity: 0}
+		25%{opacity: 1}
+		75%{opacity: 1}
+		100% {opacity: 0}
+	}
+
+
+
+.move4{
+/*	animation-name: movefour;
+	animation-duration: 2.5s;
+	-moz-animation-name: movefour;
+	-moz-animation-duration: 2.5s;
+	-webkit-animation-name: movefour;
+	-webkit-animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	transform:scale(1.8);
+    -moz-transform:scale(1.8);
+    -webkit-transform:scale(1.8);left:34%
+        
+        */
+        animation-delay:8s;
+        -webkit-animation-delay:8s;
+        animation-name:movefour;animation-duration:3s;
+	-webkit-animation-name:movefour;
+	-webkit-animation-duration:3s;
+	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards
+        
+   
+}
+@keyframes movefour
+    {0%  {transform:scale(1);left:0%}
+	100% {transform:scale(1.8);left:34%}}
+@-moz-keyframes movefour /* Firefox */
+	{0%  {-moz-transform:scale(1);left:0%}
+	100% {-moz-transform:scale(1.8);left:34%}}
+@-webkit-keyframes movefour /* Safari 和 Chrome */
+	{0%  {-webkit-transform:scale(1);left:0%}
+	100% {-webkit-transform:scale(1.8);left:34%}}
+
+
+
+
+
+
+
+
+
+
+/**/

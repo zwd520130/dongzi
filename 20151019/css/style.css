@@ -1,0 +1,1060 @@
+@charset "UTF-8";
+/**
+ * @coding dongzi (dongzi886@gmail.com)
+ * @date    2015-10-17 14:31:31
+ * @version $Id$
+ */
+html,body,div,ul,li,p{ margin:0;padding:0;}
+html,body{height: 100%; background: #fff}
+body { -webkit-text-size-adjust:none;font-family:tahoma, arial, sans-serif;  color:#000; overflow:hidden;text-align: left;-webkit-appearance:none;}
+table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000;}del,ins{text-decoration:none}p{ margin:0; padding:0}img {-ms-interpolation-mode: bicubic;}
+a:link,a:visited,a:hover,a:active{ text-decoration:none;outline: none;color: #349890;}
+li{ list-style:none;}
+a,select{outline: none;}
+img{ vertical-align:middle; width: 100%;}
+body{background: #d8f6f4;font-family:"Microsoft Yahei";}
+#loading{position: relative;min-width: 320px;max-width: 640px;margin:0 auto;overflow: hidden;}
+.bg{position: relative;}
+.page{position: absolute;left: 0;top: 0;width: 100%;}
+.page-3{height: 103%;}
+#wrap{position: relative;min-width: 320px;max-width: 640px;margin:0 auto;}
+.question{z-index: 3;position: relative; width: 100%; height: 100%}
+.main{position: absolute;left: 0;top: 0;width: 100%;height: 100%;overflow: hidden;}
+.img1{ width: 21.2%;top:39.8%;left:39.3%;position: absolute;z-index: 3 }
+.loading-box{width: 21.2%;top:41.8%;left:39.3%; height: 19%;position: absolute;z-index: 2}
+.img2{position:absolute;bottom:20%;left: 0;}
+.img3{position: absolute;bottom: 0;left: 0;height: 20%;}
+#loading-bar{top:35%;width: 100%;text-align: center;color: red;position: absolute;}
+.pic_0{ width: 6%;top:79.6%;position: absolute;left:58.9%;z-index: 50;  }
+.img4{ width: 77.1%;top:7.7%;left:11%;position: absolute;z-index: 3 }
+.img5{ width: 19.8%;top: 42.9%;left: -20.7%;position: absolute;z-index: 3 }
+.lb-1{ width:27.5%;top:73.3%;position: absolute;left:25.6%;z-index: 8  }
+.lb-2{ width:30.9%;top:56.1%;position: absolute;left: 59.5%;z-index: 8  }
+#music1{position: absolute;top: -1000%;}
+.music{width: 8%;top:2%;right:3%; position: fixed; z-index: 17}
+.imgon{animation-name: imgon;animation-duration: 1.2s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: normal;animation-play-state: running;	/* Firefox: */	-moz-animation-name: imgon;-moz-animation-duration: 1.2s;-moz-animation-timing-function: linear;-moz-animation-iteration-count: infinite;-moz-animation-direction: normal;-moz-animation-play-state: running;/* Safari 和 Chrome: */-webkit-animation-name: imgon;-webkit-animation-duration: 1.2s;-webkit-animation-timing-function: linear;-webkit-animation-iteration-count: infinite;-webkit-animation-direction: normal;-webkit-animation-play-state: running;}
+@-moz-keyframes imgon /* Firefox */
+{
+	0%   {-moz-transform:rotate(0deg);}
+	25%  {-moz-transform:rotate(90deg);}
+	50%  {-moz-transform:rotate(180deg);}
+	75%  {-moz-transform:rotate(270deg);}
+	100% {-moz-transform:rotate(360deg);}
+}
+@-webkit-keyframes imgon /* Safari 和 Chrome */
+{
+	0%   {-webkit-transform:rotate(0deg);}
+	25%  {-webkit-transform:rotate(90deg);}
+	50%  {-webkit-transform:rotate(180deg);}
+	75%  {-webkit-transform:rotate(270deg);}
+	100% {-webkit-transform:rotate(360deg);}
+}
+@keyframes imgon
+{
+	0%   {transform:rotate(0deg);}
+	25%  {transform:rotate(90deg);}
+	50%  {transform:rotate(180deg);}
+	75%  {transform:rotate(270deg);}
+	100% {transform:rotate(360deg);}
+}
+.img6{ width: 4.2%;top:78.7%;left:58.1%;position: absolute;z-index: 3 }
+.img7{ width: 47.8%;top:6.5%;left:-20%;position: absolute;z-index: 2 }
+.img8{ width: 50.3%;top:82.27%;left:25%;position: absolute;z-index: 2 }
+.img9{ width:14.2%;top:73.2%;left: 43%;position: absolute;  }
+.img9{ width:14.2%;top:72.2%;left: 43%;position: absolute;  }
+.img10{ width: 47.8%;top:0%;right:-23%;position: absolute;z-index: 1 }
+.img10-1{left:-20%;top: 6%;}
+.img10-2{right:-23%;top: 56.9%;}
+.img10-3{left:-20%;top: 63.9%;}
+.img10-4{left:20%;opacity: 0.7;top: 73.9%;}
+.img11{ width: 25.1%;top:12.6%;left:4%;position: absolute;z-index: 2 }
+.img11-1{left: 1%;top: 8.6%;z-index: 4}
+.img12{ width: 35.6%;top:20%;left:56.2%;position: absolute;z-index: 2 }
+.img13{ width: 14.5%;top:36.5%;left:50.3%;position: absolute;z-index: 2 }
+.yld{position: absolute;left:66.2%;top:73%;width: 30.7%;z-index: 18 }
+.d_yld{top: 63.2%;}
+
+.openemail{ width: 58%;height: 28%;position: absolute;left: 15%;top: 55%;z-index: 3}
+.img13-1{top:70.9%;left:40.4%; }
+.img14{ width: 35.6%;top:30.3%;left:13.2%;position: absolute;z-index: 2 }
+.img15{ width: 14.0%;top:49.7%;left:35%;position: absolute;z-index: 2 }
+.img15-1{left: 20%;top:20%}
+.img16{ width: 46%;top:46.9%;left:42%;position: absolute;z-index: 2 }
+.img17{ width: 36%;top:60.4%;left:5.7%;position: absolute;z-index: 2 }
+.blackbg{position: fixed; width: 100%;height:100%; background: #000;opacity: 0.8;z-index: 19;left: 0;top:0;display: none;}
+.whitebg{position: fixed; width: 100%;height:100%; background: #fff;opacity: 0.75;z-index: 10;left: 0;top:0;display: none;}
+.showbox{position: absolute;left: 0;top: 0; width: 100%;height: 100%;z-index: 30;display: none;}
+.sc-show{z-index: 12;}
+.img18{width:70.1%;top:12.2%;left: 15%;position: absolute}
+.img19{width:30%;top:87.4%;left: 6.7%;position: absolute;}
+.img20{width:35.9%;top:87.4%;left: 57.1%;position: absolute;z-index: 5}
+.img21{width:20.4%;top:13.4%;left: 77.9%;position: absolute;z-index: 5}
+
+.img22{width:15.7%;top:11.8%;left: 32.6%;position: absolute;z-index: 5;animation-delay:0.3s;
+	-moz-animation-delay:0.3s;
+	-webkit-animation-delay:0.3s;}
+.img23{width:15.9%;top:17.6%;left: 44.4%;position: absolute;z-index: 5}
+.img24{width:15.8%;top:27%;left: 73.3%;position: absolute;z-index: 5;animation-delay:0.2s;
+	-moz-animation-delay:0.2s;
+	-webkit-animation-delay:0.2s;}
+.img25{width:15.0%;top:29.8%;left: 19.2%;position: absolute;z-index: 5}
+.img26{width:15.9%;top:38.8%;left: 40.7%;position: absolute;z-index: 5;
+animation-delay:0.1s;
+	-moz-animation-delay:0.1s;
+	-webkit-animation-delay:0.1s;}
+	.scd{width:13.5%;left:38.1%;top:49%;z-index: 2;position: absolute;   }
+.img27{width:15.0%;top:48.9%;left: 76.5%;position: absolute;z-index: 5}
+.img28{width:15.2%;top:48.5%;left: 4%;position: absolute;z-index: 5}
+.img29{left: 75.8%;top:83%; }
+.img29-1{left: 2.8%;top: 10%; }
+.img30{position: absolute;left: -20%;top:69.3%; width:45.3%;z-index: 1  }
+.img31{top:92%;z-index: 3}
+.img11-gc{position: absolute;left: 0;top: 0;z-index: 3}
+
+.img32{width:2.1%;top: 34.5%;left: 86.9%;position: absolute;z-index: 1}
+.img33{width:2.1%;top: 34.5%;left: 86.9%;position: absolute;z-index: 1;	animation-delay:0.7s;
+	-moz-animation-delay:0.7s;
+	-webkit-animation-delay:0.7s;}
+.img34{width:2.1%;top: 39.3%;left: 73.9%;position: absolute;z-index: 1;}
+.img35{width:2.1%;top: 39.3%;left: 73.9%;position: absolute;z-index: 1;animation-delay:0.6s;
+	-moz-animation-delay:0.6s;
+	-webkit-animation-delay:0.6s;}
+.img36{width:2.1%;top: 39.3%;left: 73.9%;position: absolute;z-index: 1;animation-delay:1.2s;
+	-moz-animation-delay:1.2s;
+	-webkit-animation-delay:1.2s;}
+.img37{width:2.1%;top: 39.3%;left: 73.9%;position: absolute;z-index: 1;animation-delay:1.8s;
+	-moz-animation-delay:1.8s;
+	-webkit-animation-delay:1.8s;}
+.img38{width:2.1%;top: 49%;left: 46.6%;position: absolute;z-index: 2;}
+.img39{width:2.1%;top: 49%;left: 46.6%;position: absolute;z-index: 2;animation-delay:0.5s;
+	-moz-animation-delay:0.5s;
+	-webkit-animation-delay:0.5s;opacity: 0}
+.img40{width:2.1%;top: 49%;left: 46.6%;position: absolute;z-index: 2;animation-delay:1s;
+	-moz-animation-delay:1s;
+	-webkit-animation-delay:1s;opacity: 0}
+.img40-1{width:2.1%;top: 49%;left: 46.6%;position: absolute;z-index: 2;animation-delay:1.5s;
+	-moz-animation-delay:1.5s;
+	-webkit-animation-delay:1.5s;opacity: 0}
+.img41{width:2.1%;top:54.4%;left: 31.8%;position: absolute;z-index: 1;}
+.img42{width:2.1%;top: 54.4%;left: 31.8%;position: absolute;z-index: 1;animation-delay:.5s;
+	-moz-animation-delay:.5s;
+	-webkit-animation-delay:.5s;opacity: 0}
+.img43{width:2.1%;top: 54.4%;left: 31.8%;position: absolute;z-index: 1;animation-delay:1s;
+	-moz-animation-delay:1s;
+	-webkit-animation-delay:1s;;opacity: 0}
+
+.img44{width:6.7%;top: 59.1%;left: 15.4%;position: absolute;z-index: 1;}
+.img45{width:6.7%;top: 59.1%;left: 15.4%;position: absolute;z-index: 1;animation-delay:.5s;
+	-moz-animation-delay:.5s;
+	-webkit-animation-delay:0.8s;opacity: 0}
+.img45-1{width:6.7%;top: 59.1%;left: 15.4%;position: absolute;z-index: 1;animation-delay:.5s;
+	-moz-animation-delay:.5s;
+	-webkit-animation-delay:1.6s;opacity: 0}
+.img46{width:6.5%;top:70.3%;left: 47%;position: absolute;z-index: 1;}
+.img47{width:6.5%;top: 67.6%;left: 41%;position: absolute;z-index: 1;animation-delay:.5s;
+	-moz-animation-delay:.5s;
+	-webkit-animation-delay:1s;opacity: 0}
+.img47-1{width:6.5%;top: 67.6%;left: 41%;position: absolute;z-index: 1;animation-delay:.5s;
+	-moz-animation-delay:.5s;
+	-webkit-animation-delay:2s;opacity: 0}
+.img48{width:8.1%;top:74.8%;left: 59.5%;position: absolute;z-index: 1;}
+.img49{width:8.1%;top:76.5%;left: 53%;position: absolute;z-index: 1;animation-delay:.5s;
+	-moz-animation-delay:.5s;
+	-webkit-animation-delay:.8s;opacity: 0;}
+.img50{width:8.1%;top:78.5%;left: 47.2%;position: absolute;z-index: 1;animation-delay:.5s;
+	-moz-animation-delay:.5s;
+	-webkit-animation-delay:1.6s;opacity: 0;}
+.door-bg{height: 100%;}
+.img51{ width:67.5%;left: 16%;top:17.5%;position: absolute;z-index: 1;z-index: 13 }
+.zpq{position: absolute;left: 0;top: 0;z-index: 2; width: 100%}
+.img52{width: 3.5%;left: 82.4%;top: 2.6%;position: absolute;z-index: 13;padding: 6%;}
+.img53{ width:60.3%;left:21%;top:39%;position: absolute;z-index: 3   }
+.p1{ width: 100%;top:47.6%;position: absolute;left: 0; text-align: center;color: #349890;font-weight: bold;vertical-align: bottom;}
+.p1 em{background: #339691;color: #fff; padding: 0.01em 0.2em;margin:0 1px;font-weight: bolder;vertical-align: text-bottom;} 
+.img54{top:86.5%;left:6.8%;position: absolute;width:34.5%;z-index: 10   }
+.img55{top:86.5%;left:63.7%;position: absolute;width:29.5%;z-index: 10   }
+.img56{top:88.5%;left:30.3%;position: absolute;width:38.5%;z-index: 10   }
+.p2{ width: 96%;text-align: center;left: 0;position: absolute;top:14.5%;color: #349890;left: 2%; }
+.p3{ width: 90%;left: 7.6%;position: absolute;top:20%;color: #349890; }
+.p4{ width: 65%;left: 34.4%;position: absolute;top:20%;color: #349890;  text-decoration:none }
+.p4 a{color: #349890;text-decoration: underline;}
+.p4 a em{}
+.bm-tab{z-index:20;position: absolute;width: 100%;left: 0;top: 0;display: none;}
+.wancheng{width: 100%;left: 0;top: 0;position: absolute; z-index: 2}
+.sele_1{ width:50%;left:39%;position: absolute;top: 40.4%;background: none;height: 3.4%;border: 0;color: #349890;text-align: center; }
+.sele_2{top: 48.8%;}
+.inpit_1{ width: 50%;left: 39.1%;top:56.2%;position: absolute;height: 3.4%; line-height: 3.4%;color: #349890; background: none;border: none;}
+.inpit_2{top: 64.5%;}
+.sele_3{ width:13.4%;height: 3.4%;position: absolute;left:46.8%;top:72.6%;background: none;border: none;color: #349890;text-align: center;   }
+.nub1{ width:23.7%;top:22.5%;left:34.9%;position: absolute;z-index: 4 }
+.nub2{ width:23.7%;top:25%;left:34.9%;position: absolute;z-index: 4 }
+.nub3{ width:26.2%;top:27.6%;left:34.9%;position: absolute;z-index: 4 }
+.nub4{ width:26.2%;top:30.4%;left:34.9%;position: absolute;z-index: 4 }
+.sele_4{left:66.8%; width: 7% }
+.sele_5{left:78.6%; width: 7% }
+.img58{ width:29.8%;left: 6.7%;top:86.3%;position: absolute;  }
+.img59{ width:29.8%;left: 62.7%;top:86.3%;position: absolute;  }
+.img60{ width:29.5%;left: 30.4%;top:82.9%;position: absolute;z-index: 3  }
+.img61{ width:83.5%;left: 8.7%;top:5.7%;position: absolute;display: none;z-index: 25 }
+.daka{ width: 100%;position: absolute;left: 0;top:0;z-index: 2}
+.hide{display: none;}
+.door{ width: 50%;left: 20%;top: 36%;position: absolute;height: 50%;}
+.hand{ width: 50%;height: 50%;position: absolute;left: 25%;top: 25%;z-index: 5;user-select: none;-webkit-user-select: none;-moz-user-select: none;}
+.photo1{position: absolute;z-index: 2; width:38.4%;left: 0%;top:11.6%;opacity: 0;}
+.photo2{position: absolute;z-index: 3; width:45%;left: 16%;top: 13.8%;opacity: 0;animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;}
+.photo3{position: absolute;z-index: 4; width:31.7%;left: 46.8%;top: 15.3%;opacity: 0;animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;}
+.photo4{position: absolute;z-index: 5; width:37.1%;left: 67.9%;top: 18.1%;opacity: 0;animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;}
+.photo5{position: absolute;z-index: 6; width:50%;left: -10%;top: 34.4%;opacity: 0;animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;}
+.photo6{position: absolute;z-index: 10; width:43.2%;left: 29.3%;top: 36.9%;opacity: 0;animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;}
+.photo7{position: absolute;z-index: 10;left: 55.4%;width:49.3%;top: 35.6%;opacity: 0;animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;}
+.photo8{position: absolute;z-index: 8; width:35.6%; left: 2%;top: 58.4%;opacity: 0;animation-delay: 3.5s;
+	-webkit-animation-delay: 3.5s;
+	-moz-animation-delay: 3.5s;}
+.photo9{position: absolute;z-index: 9;  width:47.6%;left: 26%;top: 47.6%;opacity: 0;animation-delay: 4s;
+	-webkit-animation-delay: 4s;
+	-moz-animation-delay: 4s;}
+.photo10{position: absolute;z-index: 10;width:48.5%;left: 30%;top: 61.1%;opacity: 0;animation-delay: 4.5s;
+	-webkit-animation-delay: 4.5s;
+	-moz-animation-delay: 4.5s;}
+.photo11{position: absolute;z-index: 11; width:31.7%;left: 67.8%;top: 53.9%;opacity: 0;animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;}
+.page-10{}
+.d_1{ width:29.8%;top:35.7%;left:10.5%;position: absolute;animation-name: dongone;
+	animation-duration:  .5s;
+	-moz-animation-name: dongone;
+	-moz-animation-duration:  .5s;
+	-webkit-animation-name: dongone;
+	-webkit-animation-duration: .5s;  }
+.d_2{ width:29.8%;top:35.7%;right:15.5%;position: absolute; animation-name: dongotwo;
+	animation-duration:  .5s;
+	-moz-animation-name: dongotwo;
+	-moz-animation-duration:  .5s;
+	-webkit-animation-name: dongotwo;
+	-webkit-animation-duration: .5s;animation-delay: 0.3s;
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s; }
+.d_3{ width:29.8%;top:55.1%;left:10.5%;position: absolute;animation-name: dongone;
+	animation-duration:  .5s;
+	-moz-animation-name: dongone;
+	-moz-animation-duration:  .5s;
+	-webkit-animation-name: dongone;
+	-webkit-animation-duration: .5s; animation-delay: 0.1s;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s }
+.d_4{ width:29.8%;top:55.1%;right:15.5%;position: absolute;animation-name: dongotwo;
+	animation-duration:  .5s;
+	-moz-animation-name: dongotwo;
+	-moz-animation-duration:  .5s;
+	-webkit-animation-name: dongotwo;
+	-webkit-animation-duration: .5s;animation-delay: 0.2s;
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s  }
+.d_5{ width: 100%;left: 0;top:0;top: 0;position: absolute;z-index: 2}
+.d_6{ width: 29.5%;left: 35%;top:0;top: 83%;position: absolute;z-index: 2}
+.fl{float: left;}
+.timu{ width:68.4%;top:44.5%;left:14.3%;position: absolute;z-index: 3  }
+.q1_1{width: 85.7%; padding-left: 14.3%;position: absolute;z-index: 3;top:51.9%;left: 0 }
+.q1_2{width: 85.7%;padding-left: 14.3%;position: absolute;z-index: 3;top:55.8%;left: 0 }
+.q1_3{width: 85.7%;padding-left: 14.3%;position: absolute;z-index: 3;top:59.8%;left: 0 }
+.img_q1{width:26.5%;left: 0;position: relative;top: 0; }
+.img_q2{width:22.9%;left: 0;position: relative;top: 0; }
+.img_q3{width:27.8%;left: 0;position: relative;top: 0; }
+.img_q4{width:26.2%;left: 0;position: relative;top: 0; }
+.img_q5{width:26.2%;left: 0;position: relative;top: 0; }
+.img_q6{width:43.9%;left: 0;position: relative;top: 0; }
+.img_q7{width:29.3%;left: 0;position: relative;top: 0; }
+.img_q8{width:35.1%;left: 0;position: relative;top: 0; }
+.d_7{width:4.2%; }
+.ketang{position: absolute;z-index: 3;top:11.3%;left: 16.2%; width:57.5%;  }
+.d_8{position: absolute;width: 29.5%;left:35%;top:83%;z-index: 3  }
+.d_9,.d_10,.d_11{position: absolute;z-index: 3;width: 100%;left: 0;top: 0;}
+.d_tijiao{position: absolute;width: 29.5%;left:35%;top:83%;z-index: 3 }
+.p_ques{ width: 100%;left: 0;top: 51.3%;color: #339791; text-align: center;position: absolute;z-index: 3}
+.tz_btn{width: 22.6%;top: 70.2%;left: 36.4%;position: absolute;z-index: 3}
+.d_12{ width: 21.5%;left: 59%;position: absolute;top:76.6%;z-index: 3 }
+.d_13{ width: 21.5%;left: 59%;position: absolute;top:74.6%;z-index: 3;animation-name: dui;
+	animation-duration:  2s;
+	-moz-animation-name: dui;
+	-moz-animation-duration:  2s;
+	-webkit-animation-name: dui;
+	-webkit-animation-duration: 2s;}
+.d_14{ width: 21.5%;left: 59%;position: absolute;top:72.7%;z-index: 9;animation-name: duitwo;
+	animation-duration:  2s;
+	-moz-animation-name: duitwo;
+	-moz-animation-duration:  2s;
+	-webkit-animation-name: duitwo;
+	-webkit-animation-duration: 2s;
+	opacity: 0 }
+.huise{z-index: 6}
+.d_15{position: absolute;left:42.1%;top: 14.6%;z-index: 10;width:7.5%; }
+.d_16{position: absolute;left: 55.1%;
+top: 20.6%;z-index: 10;width:7.5%; }
+.d_17{position: absolute;left: 82.1%;
+top: 30%;z-index: 10;width:7.5%; }
+.d_18{position: absolute;left: 28.1%;
+top: 33.2%;z-index: 10;width:7.5%; }
+.d_19{position: absolute;left: 50.1%;
+top: 42.0%;
+z-index: 10;width:7.5%; }
+.d_20{position: absolute;left: 86%;
+top: 52.2%;z-index: 10;width:7.5%; }
+.d_21{position: absolute;left: 13%;
+top: 52.2%;z-index: 10;width:7.5%; }
+.d_22{ width: 100%;top: 0;left: 0;position: absolute;z-index: 3}
+.d_23{position: absolute;width: 51.2%; left: 30.4%;top: 27.5%;z-index: 4 ;
+	animation-name: yaoone;
+	animation-duration:  0.5s;
+	-moz-animation-name: yaoone;
+	-moz-animation-duration:  0.5s;
+	-webkit-animation-name: yaoone;
+	-webkit-animation-duration: 0.5s;}
+.d_24{position: absolute;width: 51.2%; left:30%;top:59.4%;z-index: 3  }
+.d_25{position: absolute;width: 29.6%; left:37.9%;top:76.2%;z-index: 3;animation-name: yaotwo;
+	animation-duration:  0.2s;
+	-moz-animation-name: yaotwo;
+	-moz-animation-duration:  0.2s;
+	-webkit-animation-name: yaotwo;
+	-webkit-animation-duration: 0.2s;  }
+.d_26{position: absolute;width: 34.8%;left: 52.4%;top: 48.5%;z-index: 4 ;
+	animation-name: yaoone;
+	animation-duration:  0.5s;
+	-moz-animation-name: yaoone;
+	-moz-animation-duration:  0.5s;
+	-webkit-animation-name: yaoone;
+	-webkit-animation-duration: 0.5s;}
+.d_27{position: absolute;width: 34.8%; left: 52%;top: 70.4%;z-index: 3  }
+.d_28{position: absolute;width: 35.6%; left: 49.5%;top: 48.9%;z-index: 4 ;
+	animation-name: yaothree;
+	animation-duration:  0.5s;
+	-moz-animation-name: yaothree;
+	-moz-animation-duration:  0.5s;
+	-webkit-animation-name: yaothree;
+	-webkit-animation-duration: 0.5s;}
+
+.d_29{position:absolute;z-index: 4; width: 50.3%;left:16.8%;top:20%; z-index: 3;opacity: 0;}
+.d_30{position:absolute;z-index: 4; width: 5.9%;left:43.9%;top:46.4%; z-index: 3;opacity: 0;  }
+.d_31{position:absolute;z-index: 4; width: 3.1%;left:51.5%;top:49.5%; z-index: 3;opacity: 0;}
+.cfs_fadeInDown{animation-name:cfs_fadeInDown;animation-duration:0.3s;-webkit-animation-name:cfs_fadeInDown;-webkit-animation-duration:0.3s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes cfs_fadeInDown{0%{opacity:0;-webkit-transform:translateY(100%)}90%,100%{opacity:1;-webkit-transform:none}}@keyframes cfs_fadeInDown{0%{opacity:0;transform:translateY(100%)}90%,100%{opacity:1;transform:none}}
+.page_p{left: 88%;top: 95.3%; width: auto; text-align: left;}
+
+@keyframes yaoone
+	{0%  {transform:rotate(0deg);}
+	60%  {transform:rotate(0deg);}
+	80%  {transform:rotate(-15deg);}
+	100% {transform:rotate(15deg);}}
+@-moz-keyframes yaoone /* Firefox */
+	{0%  {-moz-transform:rotate(0deg);}
+	60%  {-moz-transform:rotate(0deg);}
+	80%  {-moz-transform:rotate(-15deg);}
+	100% {-moz-transform:rotate(15deg);}}
+@-webkit-keyframes yaoone /* Safari 和 Chrome */
+	{0%  {-webkit-transform:rotate(0deg);}
+	60%  {-webkit-transform:rotate(0deg);}
+	80%  {-webkit-transform:rotate(-15deg);}
+	100% {-webkit-transform:rotate(15deg);}}
+@keyframes yaotwo
+	{0%  {transform:rotate(-10deg);}
+	100% {transform:rotate(10deg);}}
+@-moz-keyframes yaotwo /* Firefox */
+	{0%  {-moz-transform:rotate(-10deg);}
+	100% {-moz-transform:rotate(10deg);}}
+@-webkit-keyframes yaotwo /* Safari 和 Chrome */
+	{0%  {-webkit-transform:rotate(-10deg);}
+	100% {-webkit-transform:rotate(10deg);}}
+@keyframes yaothree
+	{0%  {transform:scale(1,1);}
+	100% {transform:scale(1.1,1.1);}}
+@-moz-keyframes yaothree /* Firefox */
+	{0%  {-moz-transform:scale(1,1);}
+	100% {-moz-transform:scale(1.1,1.1);}}
+@-webkit-keyframes yaothree /* Safari 和 Chrome */
+	{0%  {-webkit-transform:scale(1,1);}
+	100% {-webkit-transform:scale(1.1,1.1);}}
+@keyframes yaofour
+	{0%  {opacity: 0;}
+	100% {opacity:1}}
+@-moz-keyframes yaofour /* Firefox */
+	{0%  {opacity: 0;}
+	100% {opacity:1}}
+@-webkit-keyframes yaofour /* Safari 和 Chrome */
+	{0%  {opacity: 0;}
+	100% {opacity:1}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shouzhi{animation-name: shouzhi;
+	animation-duration:  0.5s;
+	-moz-animation-name: shouzhi;
+	-moz-animation-duration:  0.5s;
+	-webkit-animation-name: shouzhi;
+	-webkit-animation-duration: 0.5s;}
+@keyframes shouzhi
+	{0%  {transform:translate(0px);}
+	100% {transform:translate(5px,5px);}}
+@-moz-keyframes shouzhi /* Firefox */
+	{0%  {-moz-transform:translate(0px);}
+	100% {-moz-transform:translate(5px,5px);}}
+@-webkit-keyframes shouzhi /* Safari 和 Chrome */
+	{0%  {-webkit-transform:translate(0px);}
+	100% {-webkit-transform:translate(5px,5px);}}
+
+
+@keyframes dui
+	{0%  {opacity: 0}
+	50%  {opacity: 1}
+	75% {opacity: 1}
+	100% {opacity: 1}}
+@-moz-keyframes dui /* Firefox */
+	{0%  {opacity: 0}
+	50%  {opacity: 1}
+	75% {opacity: 1}
+	100% {opacity: 1}}
+@-webkit-keyframes dui /* Safari 和 Chrome */
+	{0%  {opacity: 0}
+	50%  {opacity: 1}
+	75% {opacity: 1}
+	100% {opacity: 1}}
+@keyframes duitwo
+	{0%  {opacity: 0}
+	50%  {opacity: 0}
+	75% {opacity: 1}
+	100% {opacity: 1}}
+@-moz-keyframes duitwo /* Firefox */
+	{0%  {opacity: 0}
+	50%  {opacity: 0}
+	75% {opacity: 1}
+	100% {opacity: 1}}
+@-webkit-keyframes duitwo /* Safari 和 Chrome */
+	{0%  {opacity: 0}
+	50%  {opacity: 0}
+	75% {opacity: 1}
+	100% {opacity: 1}}
+
+
+
+
+
+
+
+@keyframes dongone
+	{0%  {transform:translate(-10px);opacity: 0.5}
+	100% {transform:translate(10px);opacity: 1}}
+@-moz-keyframes dongone /* Firefox */
+	{0%  {-moz-transform:translate(-10px);opacity: 0.5}
+	100% {-moz-transform:translate(10px);opacity: 1}}
+@-webkit-keyframes dongone /* Safari 和 Chrome */
+	{0%  {-webkit-transform:translate(-10px);opacity: 0.5}
+	100% {-webkit-transform:translate(10px);opacity: 1}}
+@keyframes dongotwo
+	{0%  {transform:translate(0px);opacity: 0.5}
+	100% {transform:translate(-20px);opacity: 1}}
+@-moz-keyframes dongotwo /* Firefox */
+	{0%  {-moz-transform:translate(0px);opacity: 0.5}
+	100% {-moz-transform:translate(-20px);opacity: 1}}
+@-webkit-keyframes dongotwo /* Safari 和 Chrome */
+	{0%  {-webkit-transform:translate(0px);opacity: 0.5}
+	100% {-webkit-transform:translate(-20px);opacity: 1}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shou{width: 30.9%;left: 62.3%;top: 72.2%;position: absolute;z-index: 18  ;animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+animation-name: moveshou;
+	animation-duration: 1s;
+	-moz-animation-name: moveshou;
+	-moz-animation-duration: 1s;
+	-webkit-animation-name: moveshou;
+	-webkit-animation-duration: 1s;
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;}
+.d_shou{top: 62.2%}
+@keyframes moveshou
+	{0%  {transform:rotate(-30deg);opacity: 1}
+	100% {transform:rotate(0deg);opacity: 1}}
+@-moz-keyframes moveshou /* Firefox */
+	{0%  {-moz-transform:rotate(-30deg);opacity: 1}
+	100% {-moz-transform:rotate(0deg);opacity: 1}}
+@-webkit-keyframes moveshou /* Safari 和 Chrome */
+	{0%  {-webkit-transform:rotate(-30deg);opacity: 1}
+	100% {-webkit-transform:rotate(0deg);opacity: 1}}
+.libi-1{
+    animation-name: libione;
+	animation-duration: .75s;
+	-moz-animation-name: libione;
+	-moz-animation-duration:  .75s;
+	-webkit-animation-name: libione;
+	-webkit-animation-duration:  .75s;
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;}
+
+@keyframes libione
+	{0%  {transform:rotate(0deg);}
+	100% {transform:rotate(-20deg);}}
+@-moz-keyframes libione /* Firefox */
+	{0%  {-moz-transform:rotate(0deg);}
+	100% {-moz-transform:rotate(-20deg);}}
+@-webkit-keyframes libione /* Safari 和 Chrome */
+	{0%  {-webkit-transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(-20deg);}}
+.libi-2{
+    animation-name: libitwo;
+	animation-duration:  .75s;
+	-moz-animation-name: libitwo;
+	-moz-animation-duration:  .75s;
+	-webkit-animation-name: libitwo;
+	-webkit-animation-duration: .75s;}
+
+@keyframes libitwo
+	{0%  {transform:rotate(0deg);}
+	100% {transform:rotate(17deg);}}
+@-moz-keyframes libitwo /* Firefox */
+	{0%  {-moz-transform:rotate(0deg);}
+	100% {-moz-transform:rotate(17deg);}}
+@-webkit-keyframes libitwo /* Safari 和 Chrome */
+	{0%  {-webkit-transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(17deg);}}
+.ui-2{top: 20%;}
+.donghua{
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-play-state: running;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+.move1{
+	animation-name: movefirst;
+	animation-duration: 4.5s;
+	-moz-animation-name: movefirst;
+	-moz-animation-duration: 4.5s;
+	-webkit-animation-name: movefirst;
+	-webkit-animation-duration: 4.5s;
+}
+@keyframes movefirst
+	{0%  {left:-4%;}
+	100% {left:-25%;}}
+@-moz-keyframes movefirst /* Firefox */
+	{0%  {left:-4%;}
+	100% {left:-25%;}}
+@-webkit-keyframes movefirst /* Safari 和 Chrome */
+	{0%  {left:-4%;}
+	100% {left:-25%;}}
+.moveyun{
+	animation-name: moveyun;
+	animation-duration: 4.5s;
+	-moz-animation-name: moveyun;
+	-moz-animation-duration: 4.5s;
+	-webkit-animation-name: moveyun;
+	-webkit-animation-duration: 4.5s;
+}
+@keyframes moveyun
+	{0%  {left:20%;}
+	100% {left:40%;}}
+@-moz-keyframes moveyun /* Firefox */
+	{0%  {left:20%;}
+	100% {left:40%;}}
+@-webkit-keyframes moveyun /* Safari 和 Chrome */
+	{0%  {left:20%;}
+	100% {left:40%;}}
+.move2{
+	animation-name: movetwo;
+	animation-duration: 0.6s;
+	-moz-animation-name: movetwo;
+	-moz-animation-duration: 0.6s;
+	-webkit-animation-name: movetwo;
+	-webkit-animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+@keyframes movetwo
+	{0%  {top: 46.9%;left: -20.7%;}
+	100% {top: 31.9%;left: 12.3%;}}
+@-moz-keyframes movetwo /* Firefox */
+	{0%  {top: 46.9%;left: -20.7%;}
+	100% {top: 31.9%;left: 12.3%;}}
+@-webkit-keyframes movetwo /* Safari 和 Chrome */
+	{0%  {top: 46.9%;left: -20.7%;}
+	100% {top: 31.9%;left: 12.3%;}}
+
+.move3{
+	animation-name: movethree;
+	animation-duration: 0.5s;
+	-moz-animation-name: movethree;
+	-moz-animation-duration: 0.5s;
+	-webkit-animation-name: movethree;
+	-webkit-animation-duration: 0.5s;
+}
+@keyframes movethree
+	{0%  {transform:scale(0.9);}
+	100% {transform:scale(1.1);}}
+@-moz-keyframes movethree /* Firefox */
+	{0%  {-moz-transform:scale(0.9)}
+	100% {-moz-transform:scale(1.1)}}
+@-webkit-keyframes movethree /* Safari 和 Chrome */
+	{0%  {-webkit-transform:scale(0.9)}
+	100% {-webkit-transform:scale(1.1)}}
+.move4{
+	animation-name: movefour;
+	animation-duration: 2s;
+	-moz-animation-name: movefour;
+	-moz-animation-duration: 2s;
+	-webkit-animation-name: movefour;
+	-webkit-animation-duration: 2s;
+	animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+
+}
+@keyframes movefour
+	{0%  {transform:scale(1);}
+	100% {transform:scale(1.5);}}
+@-moz-keyframes movefour /* Firefox */
+	{0%  {-moz-transform:scale(1)}
+	100% {-moz-transform:scale(1.5)}}
+@-webkit-keyframes movefour /* Safari 和 Chrome */
+	{0%  {-webkit-transform:scale(1)}
+	100% {-webkit-transform:scale(1.5)}}
+
+.move5{
+	animation-name: movefive;
+	animation-duration: 4s;
+	-moz-animation-name: movefive;
+	-moz-animation-duration: 4s;
+	-webkit-animation-name: movefive;
+	-webkit-animation-duration: 4s;
+}
+@keyframes movefive
+	{0%  {right:-18%;}
+	100% {right:-30%;}}
+@-moz-keyframes movefive /* Firefox */
+	{0%  {right:-18%;}
+	100% {right:-30%;}}
+@-webkit-keyframes movefive /* Safari 和 Chrome */
+	{0%  {right:-18%;}
+	100% {right:-30%;}}
+.move6{
+	animation-name: movesix;
+	animation-duration: 0.4s;
+	-moz-animation-name: movesix;
+	-moz-animation-duration: 0.4s;
+	-webkit-animation-name: movesix;
+	-webkit-animation-duration: 0.4s;
+}
+@keyframes movesix
+	{0%  {top: 36%;left: 50%;}
+	100% {top: 37.0%;left: 47%;}}
+@-moz-keyframes movesix /* Firefox */
+	{0%  {top: 36%;left: 50%;}
+	100% {top: 37.0%;left: 47%;}}
+@-webkit-keyframes movesix /* Safari 和 Chrome */
+	{0%  {top: 36%;left: 50%;}
+	100% {top: 37.0%;left: 47%;}}
+.move7{
+	animation-name: moveseven;
+	animation-duration: 0.4s;
+	-moz-animation-name: moveseven;
+	-moz-animation-duration: 0.4s;
+	-webkit-animation-name: moveseven;
+	-webkit-animation-duration: 0.4s;
+}
+@keyframes moveseven
+	{0%  {top: 49.7%;left: 35%;}
+	100% {top: 50.7%;left: 37%;}}
+@-moz-keyframes moveseven /* Firefox */
+	{0%  {top: 49.7%;left: 35%;}
+	100% {top: 50.7%;left: 37%;}}
+@-webkit-keyframes moveseven /* Safari 和 Chrome */
+	{0%  {top: 49.7%;left: 35%;}
+	100% {top: 50.7%;left: 37%;}}
+.move8{
+	animation-name: moveright;
+	animation-duration: 0.4s;
+	-moz-animation-name: moveright;
+	-moz-animation-duration: 0.4s;
+	-webkit-animation-name: moveright;
+	-webkit-animation-duration: 0.4s;
+}
+@keyframes moveright
+	{0%  {top: 70.4%;left: 40.4%;}
+	100% {top: 71.4%;left: 37.8%;}}
+@-moz-keyframes moveright /* Firefox */
+	{0%  {top: 70.4%;left: 40.4%;}
+	100% {top: 71.4%;left: 37.8%;}}
+@-webkit-keyframes moveright /* Safari 和 Chrome */
+	{0%  {top: 70.4%;left: 40.4%;}
+	100% {top: 71.4%;left: 37.8%;}}
+.move9{
+	animation-name: movenine;
+	animation-duration: 0.4s;
+	-moz-animation-name: movenine;
+	-moz-animation-duration: 0.4s;
+	-webkit-animation-name: movenine;
+	-webkit-animation-duration: 0.4s;
+}
+@keyframes movenine
+	{0%  {left: 75%;top: 83%;}
+	100% {left: 76.4%;top: 84.0%;}}
+@-moz-keyframes movenine /* Firefox */
+	{0%  {left: 75%;top: 83%;}
+	100% {left: 76.4%;top: 84.0%;}}
+@-webkit-keyframes movenine /* Safari 和 Chrome */
+	{0%  {left: 75%;top: 83%;}
+	100% {left: 76.4%;top: 84.0%;}}
+.move10{
+	animation-name: moveten;
+	animation-duration: 1s;
+	-moz-animation-name: moveten;
+	-moz-animation-duration: 1s;
+	-webkit-animation-name: moveten;
+	-webkit-animation-duration: 1s;
+	animation-direction: normal;
+	-moz-animation-direction: normal;
+	-webkit-animation-direction: normal;
+}
+@keyframes moveten
+	{0%  {transform:rotate(0deg)}
+	100% {transform:rotate(360deg)}}
+@-moz-keyframes moveten /* Firefox */
+	{0%  {-moz-transform:rotate(0deg)}
+	100% {-moz-transform:rotate(360deg)}}
+@-webkit-keyframes moveten /* Safari 和 Chrome */
+	{0%  {-webkit-transform:rotate(0deg)}
+	100% {-webkit-transform:rotate(360deg)}}
+.chunsong1{
+	animation-name: csone;
+	animation-duration: 1.4s;
+	-moz-animation-name: csone;
+	-moz-animation-duration: 1.4s;
+	-webkit-animation-name: csone;
+	-webkit-animation-duration: 1.4s;
+	animation-direction: normal;
+	-moz-animation-direction: normal;
+	-webkit-animation-direction: normal;
+}
+@keyframes csone
+	{0%  {top: 34.5%;left: 86.9%;}
+	100% {top: 37.2%;left: 80.6%;}}
+@-moz-keyframes csone /* Firefox */
+	{0%  {top: 34.5%;left: 86.9%;}
+	100% {top: 37.2%;left: 80.6%;}}
+@-webkit-keyframes csone /* Safari 和 Chrome */
+	{0%  {top: 34.5%;left: 86.9%;}
+	100% {top: 37.2%;left: 80.6%;}}
+.chunsong2{
+	animation-name: cstwo;
+	animation-duration: 2.4s;
+	-moz-animation-name: cstwo;
+	-moz-animation-duration: 2.4s;
+	-webkit-animation-name: cstwo;
+	-webkit-animation-duration: 2.4s;
+	animation-direction: normal;
+	-moz-animation-direction: normal;
+	-webkit-animation-direction: normal;
+}
+@keyframes cstwo
+	{0%  {top: 39.3%;left: 73.9%;}
+	100% {top: 44%;left: 62.3%;}}
+@-moz-keyframes cstwo /* Firefox */
+	{0%  {top: 39.3%;left: 73.9%;}
+	100% {top: 44%;left: 62.3%;}}
+@-webkit-keyframes cstwo /* Safari 和 Chrome */
+	{0%  {top: 39.3%;left: 73.9%;}
+	100% {top: 44%;left: 62.3%;}}
+.chunsong3{
+	animation-name: csshree;
+	animation-duration: 2s;
+	-moz-animation-name: csshree;
+	-moz-animation-duration: 2s;
+	-webkit-animation-name: csshree;
+	-webkit-animation-duration: 2s;
+	animation-direction: normal;
+	-moz-animation-direction: normal;
+	-webkit-animation-direction: normal;
+}
+@keyframes csshree
+	{0%  {top: 49%;left: 46.6%;opacity: 1}
+	100% {top: 53.1%;left: 35.6%;opacity: 1}}
+@-moz-keyframes csshree /* Firefox */
+	{0%  {top: 49%;left: 46.6%;opacity: 1}
+	100% {top: 53.1%;left: 35.6%;opacity: 1}}
+@-webkit-keyframes csshree /* Safari 和 Chrome */
+	{0%  {top: 49%;left: 46.6%;opacity: 1}
+	100% {top: 53.1%;left: 35.6%;opacity: 1}}
+.chunsong4{
+	animation-name: csfour;
+	animation-duration: 1.5s;
+	-moz-animation-name: csfour;
+	-moz-animation-duration: 1.5s;
+	-webkit-animation-name: csfour;
+	-webkit-animation-duration: 1.5s;
+	animation-direction: normal;
+	-moz-animation-direction: normal;
+	-webkit-animation-direction: normal;
+}
+@keyframes csfour
+	{0%  {top: 54.4%;left: 31.8%;;opacity: 1}
+	100% {top: 57.2%;left: 23%;;opacity: 1}}
+@-moz-keyframes csfour /* Firefox */
+	{0%  {top: 54.4%;left: 31.8%;;opacity: 1}
+	100% {top: 57.2%;left: 23%;;opacity: 1}}
+@-webkit-keyframes csfour /* Safari 和 Chrome */
+	{0%  {top: 54.4%;left: 31.8%;;opacity: 1}
+	100% {top: 57.2%;left: 23%;;opacity: 1}}
+.chunsong5{
+	animation-name: csfive;
+	animation-duration: 2.4s;
+	-moz-animation-name: csfive;
+	-moz-animation-duration: 2.4s;
+	-webkit-animation-name: csfive;
+	-webkit-animation-duration: 2.4s;
+	animation-direction: normal;
+	-moz-animation-direction: normal;
+	-webkit-animation-direction: normal;
+}
+@keyframes csfive
+	{0%  {top: 59.1%;left: 15.4%;opacity: 1}
+	100% {top: 66.0%;left: 34.7%;opacity: 1}}
+@-moz-keyframes csfive /* Firefox */
+	{0%  {top: 59.1%;left: 15.4%;opacity: 1}
+	100% {top: 66.0%;left: 34.7%;opacity: 1}}
+@-webkit-keyframes csfive /* Safari 和 Chrome */
+	{0%  {top: 59.1%;left: 15.4%;opacity: 1}
+	100% {top: 66.0%;left: 34.7%;opacity: 1}}
+
+.chunsong6{
+	animation-name: cssix;
+	animation-duration: 2s;
+	-moz-animation-name: cssix;
+	-moz-animation-duration: 2s;
+	-webkit-animation-name: cssix;
+	-webkit-animation-duration: 2s;
+	animation-direction: normal;
+	-moz-animation-direction: normal;
+	-webkit-animation-direction: normal;
+}
+@keyframes cssix
+	{0%  {top: 67.6%;left: 41%;opacity: 1}
+	100% {top: 73.2%;left: 54.9%;opacity: 1}}
+@-moz-keyframes cssix /* Firefox */
+	{0%  {top: 67.6%;left: 41%;opacity: 1}
+	100% {top: 73.2%;left: 54.9%;opacity: 1}}
+@-webkit-keyframes cssix /* Safari 和 Chrome */
+	{0%  {top: 67.6%;left: 41%;opacity: 1}
+	100% {top: 73.2%;left: 54.9%;opacity: 1}}
+.chunsong7{
+	animation-name: csseven;
+	animation-duration: 2.4s;
+	-moz-animation-name: csseven;
+	-moz-animation-duration: 2.4s;
+	-webkit-animation-name: csseven;
+	-webkit-animation-duration: 2.4s;
+	animation-direction: normal;
+	-moz-animation-direction: normal;
+	-webkit-animation-direction: normal;
+}
+@keyframes csseven
+	{0%  {top: 74.8%;left: 59.5%;opacity: 1}
+	100% {top: 79.5%;left: 44.2%;opacity: 1}}
+@-moz-keyframes csseven /* Firefox */
+	{0%  {top: 74.8%;left: 59.5%;opacity: 1}
+	100% {top: 79.5%;left: 44.2%;opacity: 1}}
+@-webkit-keyframes csseven /* Safari 和 Chrome */
+	{0%  {top: 74.8%;left: 59.5%;opacity: 1}
+	100% {top: 79.5%;left: 44.2%;opacity: 1}}
+.move11{
+	animation-name: moveelven;
+	animation-duration: 0.8s;
+	-moz-animation-name: moveelven;
+	-moz-animation-duration: 0.8s;
+	-webkit-animation-name: moveelven;
+	-webkit-animation-duration: 0.8s;
+}
+@keyframes moveelven
+	{0%  {top: 27%;}
+	100% {top: 58%;}}
+@-moz-keyframes moveelven /* Firefox */
+	{0%  {top: 27%;}
+	100% {top: 58%;}}
+@-webkit-keyframes moveelven /* Safari 和 Chrome */
+	{0%  {top: 27%;}
+	100% {top: 58%;}}
+.move12{animation-name: movetwelve;
+	animation-duration: 0.8s;
+	-moz-animation-name: movetwelve;
+	-moz-animation-duration: 0.8s;
+	-webkit-animation-name: movetwelve;
+	-webkit-animation-duration: 0.8s;
+}
+@keyframes movetwelve
+	{0%  {transform:translateX(3%)}
+	100% {transform:translateX(-3%)}}
+@-moz-keyframes movetwelve /* Firefox */
+	{0%  {-moz-transform:translateX(3%)}
+	100% {-moz-transform:translateX(-3%)}}
+@-webkit-keyframes movetwelve /* Safari 和 Chrome */
+	{0%  {-webkit-transform:translateX(3%)}
+	100% {-webkit-transform:translateX(-3%)}}
+.move0{animation-name: movezero;
+	animation-duration: 0.5s;
+	-moz-animation-name: movezero;
+	-moz-animation-duration: 0.5s;
+	-webkit-animation-name: movezero;
+	-webkit-animation-duration: 0.5s;
+}
+@keyframes movezero
+	{0%  {transform:translate(0%,0%)}
+	100% {transform:translate(5%,10%)}}
+@-moz-keyframes movezero /* Firefox */
+	{0%  {-moz-transform:translate(0%,0%)}
+	100% {-moz-transform:translate(5%,10%)}}
+@-webkit-keyframes movezero /* Safari 和 Chrome */
+	{0%  {-webkit-transform:translate(0%,0%)}
+	100% {-webkit-transform:translate(5%,10%)}}
+
+.move22{animation-name: movedown;
+	animation-duration: 0.8s;
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	-moz-animation-name: movedown;
+	-moz-animation-duration: 0.8s;
+	-webkit-animation-name: movedown;
+	-webkit-animation-duration: 0.8s;
+	
+}
+@keyframes movedown
+	{0%  {transform:translate(0%,0%)}
+	100% {transform:translate(0%,15%)}}
+@-moz-keyframes movedown /* Firefox */
+	{0%  {-moz-transform:translate(0%,0%)}
+	100% {-moz-transform:translate(0%,15%)}}
+@-webkit-keyframes movedown /* Safari 和 Chrome */
+	{0%  {-webkit-transform:translate(0%,0%)}
+	100% {-webkit-transform:translate(0%,15%)}}
+.xinfeng{ width:58.7%;left:14.6%;top:54.8%;position: absolute;z-index: 10;animation-name: xinfeng;
+	animation-duration: 0.15s;
+	-moz-animation-name: xinfeng;
+	-moz-animation-duration: 0.15s;
+	-webkit-animation-name: xinfeng;
+	-webkit-animation-duration: 0.15s; 
+	animation-iteration-count: 6;
+	-moz-animation-iteration-count: 6;
+	-webkit-animation-iteration-count: 6;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s; }
+.shoubi{ width:73.2%;left:12.1%;top:49.8%;z-index: 11;position: absolute;  }
+@keyframes xinfeng
+	{0%  {transform:rotate(-10deg)}
+	100% {transform:rotate(10deg)}}
+@-moz-keyframes xinfeng /* Firefox */
+	{0%  {-moz-transform:rotate(-10deg)}
+	100% {-moz-transform:rotate(10deg)}}
+@-webkit-keyframes xinfeng /* Safari 和 Chrome */
+	{0%  {-webkit-transform:rotate(-10deg)}
+	100% {-webkit-transform:rotate(10deg)}}
+
+.move99{
+	animation-name: moveninea;
+	animation-duration: 0.5s;
+	-moz-animation-name: moveninea;
+	-moz-animation-duration: 0.5s;
+	-webkit-animation-name: moveninea;
+	-webkit-animation-duration: 0.5s;
+}
+@keyframes moveninea
+	{0%  {left: 2.8%;top: 8%;}
+	100% {left: 4%;top: 10%;}}
+@-moz-keyframes moveninea /* Firefox */
+	{0%  {left: 2.8%;top: 8%;}
+	100% {left: 4%;top: 10%;}}
+@-webkit-keyframes moveninea /* Safari 和 Chrome */
+	{0%  {left: 2.8%;top: 8%;}
+	100% {left: 4%;top: 10%;}}
+.gif{ width: 14.6%;top:41.5%;left:47.3%;position: absolute;z-index:2   }
+
+
+
+.cfs_fadeInLeft{animation-name:cfs_fadeInLeft;animation-duration:0.5s;-webkit-animation-name:cfs_fadeInLeft;-webkit-animation-duration:0.5s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes cfs_fadeInLeft{0%{opacity:0;-webkit-transform:translateX(-100%)}90%,100%{opacity:1;-webkit-transform:none}}@keyframes cfs_fadeInLeft{0%{opacity:0;transform:translateX(-100%)}90%,100%{opacity:1;transform:none}}
+
+/**/
+.ui-1{ width:69.6%;left:14.3%;top:35.6%;position: absolute;z-index: 2   }
+
+.list-ul{ position: absolute;left: 0;;display: none;width: 100%;z-index: 20 }
+.list-ul ul{ background: #fff;}
+.list-ul li{width: 98%; padding: 0 1%;color: #999; height: 18px;}
+.span-1{line-height: 100%;display: block; width: 100%;height: 100%;line-height: 150%;}
+.ul_bot{bottom:100%;overflow-y:auto;overflow-x:hidden;height: 200px;}
+.ul_year{bottom:100%;}
+
+
+
+
+
+
+
+
+/**/

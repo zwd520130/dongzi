@@ -1,0 +1,625 @@
+@charset "UTF-8";
+/**
+ * @coding dongzi (dongzi886@gmail.com)
+ * @date    2016-08-09 19:26:33
+ * @version $Id$
+ */
+html,body,div,ul,li,p{ margin:0;padding:0;}
+html,body{height: 100%;overflow: hidden; 	}
+body { -webkit-text-size-adjust:none;font-family:tahoma, arial,\9ED1\4F53, sans-serif;  color:#000; overflow:hidden;text-align: left;-webkit-appearance:none; font-size:12px;}
+table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000;}del,ins{text-decoration:none}p{ margin:0; padding:0}img {-ms-interpolation-mode: bicubic;}
+a:link,a:visited,a:hover,a:active{ text-decoration:none;}
+li{ list-style:none;}
+img{ vertical-align:middle; width: 100%;}
+.main {min-width: 320px;max-width: 640px;margin: 0 auto;}
+
+.swiper-container {width: 100%;height: 100%;}
+.cot {height: auto; width: 100%;position: relative;overflow: hidden;}
+.swiper-slide .bg{width: 100%;height: auto;min-width: 320px;margin: 0 auto;max-width: 640px;min-height: 320px;position:relative;}
+.page_content{position: absolute;width: 100%;height: 100%;left: 0;top: 0}
+.pic-list{ width: 100%;height: 100%;position: relative;}
+.pic_1{ width: 22%;position: absolute;left: 39%;top: 20.8%;
+animation-name: myfirst;
+animation-duration: 1.6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* Firefox: */
+-moz-animation-name: myfirst;
+-moz-animation-duration: 1.6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+/* Safari 和 Chrome: */
+-webkit-animation-name: myfirst;
+-webkit-animation-duration: 1.6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+}
+.loading_line{width:78.7%;height: 0.9%;position: absolute;left: 12.1%;top:54%;}
+.loading_line div{background: #757575;;width: 1%;height: 100%;-moz-border-radius:  3px;-webkit-border-radius: 3px;border-radius:3px;}
+.pic_2{width: 7.3%;position: absolute;left: 8%;top: 73%;display: none;}
+.pic_3{width: 7.3%;position: absolute;left: 22%;top: 68.6%;display: none;}
+.pic_4{width: 11.2%;position: absolute;left: 33%;top: 66%;display: none;}
+.pic_5{width: 11.2%;position: absolute;left: 46%;top: 60.5%;display: none;}
+.pic_6{width: 11.4%;position: absolute;left: 60%;top: 55%;display: none;}
+.pic_7{width: 11.4%;position: absolute;left: 76%;top: 48%;display: none;}
+.pic_8{width: 41.5%;position: absolute;left: 20.3%;top: 26.2%;display: none;}
+.pic_9{width: 48.1%;position: absolute;left: 0%;top: 1.7%;display: none;
+animation-name: moveTwo;
+animation-duration:0.6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+
+/* Firefox: */
+-moz-animation-name: moveTwo;
+-moz-animation-duration: 0.6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveTwo;
+-webkit-animation-duration: 0.6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate;
+}
+
+.pic_10{width: 47%;position: absolute;left: 42.3%;top: 12.6%;opacity: 0;}
+.pic_11{width:12.6%;position: absolute;left: 60.6%;top: -2.5%;display: none;animation-name: moveFour;
+animation-duration:4s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* Firefox: */
+-moz-animation-name: moveFour;
+-moz-animation-duration:4s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveFour;
+-webkit-animation-duration: 4s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;}
+.pic_12{width: 62.3%;position: absolute;left: 7.3%;top: 28%;opacity: 0;animation-delay:1.0s;-moz-animation-delay:1.0s;-webkit-animation-delay:1.0s;}
+.pic_13{width: 18.7%;position: absolute;left: 25.3%;top: 62.8%;display: none;animation-name: moveThree;
+animation-duration:0.6 s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+
+/* Firefox: */
+-moz-animation-name: moveThree;
+-moz-animation-duration: 0.6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveThree;
+-webkit-animation-duration: 0.6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate;}
+.pic_14{width:89%;position: absolute;left: 10.6%;top: 50.4%;opacity: 0;animation-delay:1.5s;-moz-animation-delay:1.5s;-webkit-animation-delay:1.5s;}
+
+.pic_45{width: 7.0%;position: absolute;left: 8.2%;top: 2.9%;display: none;
+animation-name: moveThree;
+animation-duration:0.6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+/* Firefox: */
+-moz-animation-name: moveThree;
+-moz-animation-duration: 0.6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveThree;
+-webkit-animation-duration: 0.6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate;}
+
+.pic_43{width: 32.1%;position: absolute;left:11.2%;top: 7.6%;display: none;animation-name: moveFive;
+animation-duration:0.1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+/* Firefox: */
+-moz-animation-name: moveFive;
+-moz-animation-duration: 0.1s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveFive;
+-webkit-animation-duration: 0.1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate;}
+.pic_44{width: 9.6%;position: absolute;left:47.1%;top:6.8%;display: none;
+animation-name: moveThree;
+animation-duration:0.8s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+/* Firefox: */
+-moz-animation-name: moveThree;
+-moz-animation-duration: 0.8s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveThree;
+-webkit-animation-duration: 0.8s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate;}
+.number{right: 63%;top: 58.2%;color:#000;position:absolute;display:none; 	}
+.pic_5_1{width: 90%;position: absolute;left: 4%;top: 5.8%;display: none;}
+.pic_4_1{width: 35.4%;position: absolute;left: 5.7%;top: 23.7%;opacity: 0;animation-delay:0.6s;-moz-animation-delay:0.6s;-webkit-animation-delay:0.6s;}
+.pic_3_1{width: 90.4%;position: absolute;left: 5.7%;top: 35.3%;opacity: 0;animation-delay:1.4s;-moz-animation-delay:1.4s;-webkit-animation-delay:1.4s;}
+.pic_46{width: 11.2%;position: absolute;left: 15.4%;top: 51.5%;display: none;
+animation-name: moveSix;
+animation-duration: 6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* Firefox: */
+-moz-animation-name: moveSix;
+-moz-animation-duration: 6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveSix;
+-webkit-animation-duration: 6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;}
+.pic_47{width: 4.5%;position: absolute;left: 37.5%;top: 58.4%;display: none;}
+.jpg_4{width: 100%;position: absolute;left: 0%;top: 45.5%;display: none;}
+
+.pic_7_1{width: 21.7%;position: absolute;left:50.4%;top: 17.6%;z-index:2;display: none;}
+.pic_6_1{width: 78.1%;position: absolute;left: 21.4%;top: 12.9%;z-index: 1;display: none;}
+.pic_6_1_1{width: 17.9%;position: absolute;left: 21.4%;top: 14.9%;z-index: 1;display: none;animation-delay:1.2s;-moz-animation-delay:1.2s;-webkit-animation-delay:1.2s;
+animation-name: myfirstOne;
+animation-duration: .6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* Firefox: */
+-moz-animation-name: myfirstOne;
+-moz-animation-duration: .6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+/* Safari 和 Chrome: */
+-webkit-animation-name: myfirstOne;
+-webkit-animation-duration: .6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+}
+.pic_50{width: 81%;position: absolute;left:5.7%;top: 35.6%;opacity: 0;animation-delay:1s;-moz-animation-delay:1s;-webkit-animation-delay:1s;}
+.pic_48{width: 66.5%;position: absolute;left: 5.7%;top: 58%;opacity: 0;animation-delay:.5s;-moz-animation-delay:.5s;-webkit-animation-delay:.5s;}
+.pic_49{width: 93.7%;position: absolute;left: 3.7%;top: 78.1%;opacity: 0;}
+
+.pic_10_1{width: 46.8%;position: absolute;left: 42.9%;top: 0%;display: none;}
+.pic_9_1{width: 23.9%;position: absolute;left:27.5%;top: 15.4%;display: none;}
+.add_9_1{animation-delay:.3s;-moz-animation-delay:0.3s;-webkit-animation-delay:.3s;animation-name: movesever;
+animation-duration: .6s;
+animation-timing-function: linear;
+animation-iteration-count: 1;
+/* Firefox: */
+-moz-animation-name: movesever;
+-moz-animation-duration: .6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: 1;
+/* Safari 和 Chrome: */
+-webkit-animation-name: movesever;
+-webkit-animation-duration: .6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: 1;}
+.pic_8_1{width: 71.2%;position: absolute;left: 3.7%;top: 33%;display: none;}
+.pic_51{width: 52.6%;position: absolute;left: 48.1%;top: 36.7%;opacity: 0;
+}
+.pic_51 img{width: 100%;animation-name: moveeight;
+animation-duration: .6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate
+/* Firefox: */
+-moz-animation-name: moveeight;
+-moz-animation-duration: .6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveeight;
+-webkit-animation-duration: .6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate}
+.pic_52{width: 104%;position: absolute;left: 0%;top:58.8%;opacity: 0}
+.pic_11_1{width: 48.2%;position: absolute;left:5.7%;top:35.2%;opacity: 0;}
+.pic_11_1 img{animation-name: moveeight;
+animation-duration: .6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate
+/* Firefox: */
+-moz-animation-name: moveeight;
+-moz-animation-duration: .6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveeight;
+-webkit-animation-duration: .6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate}
+
+
+.pic_14_1{width: 88.7%;position: absolute;left:10.6%;top:2.5%;display: none;}
+.pic_13_1{width: 19.3%;position: absolute;left:62.6%;top:14.2%;display: none;animation-name: moveeight;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate
+/* Firefox: */
+-moz-animation-name: moveeight;
+-moz-animation-duration:3s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveeight;
+-webkit-animation-duration: 3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate}
+.pic_12_1{width: 42.8%;position: absolute;left:49%;top:5.6%;display: none;}
+.pic_15_1{width: 67%;position: absolute;left:5.7%;top:38.8%;display: none;}
+.pic_53{width: 74.6%;position: absolute;right:0%;top:49.9%;opacity: 0;animation-delay:1.6s;-moz-animation-delay:1.6s;-webkit-animation-delay:1.6s;}
+
+.pic_17{width: 36.8%;position: absolute;left:50.4%;top:3.0%;display: none;
+animation-name: movenine;
+animation-duration: .4s;
+animation-timing-function: linear;
+animation-iteration-count: 1;
+/* Firefox: */
+-moz-animation-name: movenine;
+-moz-animation-duration: .4s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: 1;
+/* Safari 和 Chrome: */
+-webkit-animation-name: movenine;
+-webkit-animation-duration: .4s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: 1;}
+.pic_16{width: 90%;position: absolute;left:5.7%;top:10.8%;display: none;}
+.pic_54{width: 48.7%;position: absolute;left:25.7%;top:40.5%;opacity: 0;}
+.pic_19{width: 60%;position: absolute;left:34.6%;top:54.6%;display: none;}
+.pic_18{width: 52.8%;position: absolute;left:38%;top:63%;animation-delay:.6s;-moz-animation-delay:.6s;-webkit-animation-delay:.6s;opacity: 0}
+.jpg_5{width: 56.7%;position: absolute;left:0%;top:54.2%;animation-delay:1s;-moz-animation-delay:1s;-webkit-animation-delay:1s;opacity: 0}
+
+.pic_23{width: 100%;position: absolute;left:0%;top:0%;animation-delay:1.2s;-moz-animation-delay:1.2s;-webkit-animation-delay:1.2s;opacity: 0}
+.pic_22{width: 72%;position: absolute;left:15%;top:25.7%;animation-delay:.6s;-moz-animation-delay:.6s;-webkit-animation-delay:.6s;opacity: 0}
+.pic_55{width: 100%;position: absolute;left:0%;top:52.5%;opacity: 0}
+
+.pic_25{width: 44.3%;position: absolute;left:29%;top:12.3%;opacity: 0;}
+.pic_24{width: 16%;position: absolute;left:070.3%;top:14.4%;opacity: 0;animation-delay:1s;-moz-animation-delay:.5s;-webkit-animation-delay:1s;}
+.jpg_6{width: 34%;position: absolute;left:33%;top:22.5%;opacity: 0;animation-delay:.5s;-moz-animation-delay:.5s;-webkit-animation-delay:.5s;}
+.pic_26{width: 69%;position: absolute;left:15.5%;top:45.7%;opacity: 0;animation-delay:1.5s;-moz-animation-delay:1.5s;-webkit-animation-delay:1.5s;}
+.pic_27{width: 28.9%;position: absolute;left:-10%;top:64.7%;opacity: 0;}
+.pic_28{width: 23.5%;position: absolute;left:24.6%;top:64.7%;opacity: 0;animation-delay:1.05s;-moz-animation-delay:1.05s;-webkit-animation-delay:1.05s;}
+.pic_29{width: 24.4%;position: absolute;left:83.5%;top:64%;opacity: 0;animation-delay:2.15s;-moz-animation-delay:2.15s;-webkit-animation-delay:2.15s;}
+.pic_30{width: 24.7%;position: absolute;left:53.6%;top:64.3%;opacity: 0;animation-delay:3.25s;-moz-animation-delay:3.25s;-webkit-animation-delay:3.25s;}
+.pic_28_1{width: 23.5%;position: absolute;left:24.6%;top:64.7%;opacity: 0;animation-delay:4.3s;-moz-animation-delay:4.3s;-webkit-animation-delay:4.3s;}
+.lb{display: none; animation-name: movelb;
+animation-duration:5.6s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+/* Firefox: */
+-moz-animation-name: movelb;
+-moz-animation-duration:5.6s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+/* Safari 和 Chrome: */
+-webkit-animation-name: movelb;
+-webkit-animation-duration:5.6s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;}
+
+.pic_31{width: 79%;position: absolute;left:10.3%;top:7.7%;display: none;}
+.pic_34{width: 45.9%;position: absolute;left:30.9%;top:50.5%;opacity: 0;animation-delay:0.8s;-moz-animation-delay:0.8s;-webkit-animation-delay:0.8s;}
+.pic_35{width:42.8%;position: absolute;left:29.3%;top:67.7%;opacity: 0;animation-delay:0.8s;-moz-animation-delay:0.8s;-webkit-animation-delay:0.8s;}
+.pic_33{width: 16.2%;position: absolute;left:23.1%;top:50.3%;display: none; animation-name: moveThree;
+animation-duration:0.3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+/* Firefox: */
+-moz-animation-name: moveThree;
+-moz-animation-duration: 0.3s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveThree;
+-webkit-animation-duration: 0.3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate;}
+.pic_32{width: 12.5%;position: absolute;left:23.1%;top:63.9%;display: none;animation-name: moveThree;
+animation-duration:0.3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+/* Firefox: */
+-moz-animation-name: moveThree;
+-moz-animation-duration: 0.3s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate;
+/* Safari 和 Chrome: */
+-webkit-animation-name: moveThree;
+-webkit-animation-duration: 0.3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate;}
+
+
+
+
+
+.next-page{position: absolute;bottom:1%;left:44.1%;width: 11.8%;-moz-background-size:cover;display: ;z-index: 20;display: none;
+	background-size:cover;
+	animation: arrMove 1s ease-in-out .1s infinite;
+	-moz-animation: arrMove 1s ease-in-out .1s infinite;
+	-webkit-animation: arrMove 1s ease-in-out .1s infinite;
+	-o-animation: arrMove 1s ease-in-out .1s infinite; }
+
+@keyframes movelb
+{
+	0%{left: -40%;opacity: 1}
+	100%{left: 105%;opacity: 1}
+}
+
+@-moz-keyframes movelb /* Firefox */
+{
+	0%{left: -40%;opacity: 1}
+	100%{left: 105%;opacity: 1}
+}
+
+@-webkit-keyframes movelb /* Safari 和 Chrome */
+{
+	0%{left: -40%;opacity: 1}
+	100%{left: 105%;opacity: 1}
+}
+@keyframes arrMove{
+	0%{
+		transform:translate(0,0);
+	}
+	50%{
+		transform:translate(0,-15px);
+	}
+	100%{
+		transform:translate(0,0);
+	}
+}
+@-moz-keyframes arrMove
+{
+	0%{
+		-moz-transform:translate(0,0);
+	}
+	50%{
+		-moz-transform:translate(0,-15px);
+	}
+	100%{
+		-moz-transform:translate(0,0);
+	}
+}
+@-webkit-keyframes arrMove
+{
+	0%{
+		-webkit-transform:translate(0,0);
+	}
+	50%{
+		-webkit-transform:translate(0,-15px);
+	}
+	100%{
+		-webkit-transform:translate(0,0);
+	}
+}
+
+@keyframes myfirst
+{
+	0% {transform:rotateZ(0deg)}
+	100% {transform:rotateZ(360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+	0% {-moz-transform:rotateZ(0deg)}
+	100% {-moz-transform:rotateZ(360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+	0% {transform:rotateZ(0deg)}
+	100% {transform:rotateZ(360deg)}
+}
+@keyframes myfirstOne
+{
+	0% {transform:rotateZ(0deg)}
+	100% {transform:rotateZ(-360deg)}
+}
+
+@-moz-keyframes myfirstOne /* Firefox */
+{
+	0% {-moz-transform:rotateZ(0deg)}
+	100% {-moz-transform:rotateZ(-360deg)}
+}
+
+@-webkit-keyframes myfirstOne /* Safari 和 Chrome */
+{
+	0% {transform:rotateZ(0deg)}
+	100% {transform:rotateZ(-360deg)}
+}
+@keyframes moveTwo
+{
+	0% {transform:translateX(-10px);}
+	100% {transform:translateX(0px);}
+}
+
+@-moz-keyframes moveTwo /* Firefox */
+{
+	0% {-moz-transform:translateX(-10px);}
+	100% {-moz-transform:translateX(0px);}
+}
+
+@-webkit-keyframes moveTwo /* Safari 和 Chrome */
+{
+	0% {transform:translateX(-10px);}
+	100% {transform:translateX(0px);}
+}
+@keyframes moveThree
+{
+	0% {transform:rotateZ(-10deg)}
+	100% {transform:rotateZ(30deg)}
+}
+
+@-moz-keyframes moveThree /* Firefox */
+{
+	0% {-moz-transform:rotateZ(-10deg)}
+	100% {-moz-transform:rotateZ(30deg)}
+}
+
+@-webkit-keyframes moveThree /* Safari 和 Chrome */
+{
+	0% {-webkit-transform:rotateZ(-10deg)}
+	100% {-webkit-transform:rotateZ(30deg)}
+}
+@keyframes moveFour
+{
+	0%{left: 60.6%;top: -2.5%;}
+	25% {left:68.6%;top:0.3%;}
+	50% {left: 59.6%;    top: 1.3%;}
+	75% {left: 48.6%;top: 0.3%;}
+	100%{left: 60.6%;top: -2.5%;}
+}
+
+@-moz-keyframes moveFour /* Firefox */
+{
+	0%{left: 60.6%;top: -2.5%;}
+	25% {left:68.6%;top:0.3%;}
+	50% {left: 59.6%; top: 1.3%;}
+	75% {left: 48.6%;top: 0.3%;}
+	100%{left: 60.6%;top: -2.5%;}
+}
+
+@-webkit-keyframes moveFour /* Safari 和 Chrome */
+{
+	0%{left: 60.6%;top: -2.5%;}
+	25% {left:68.6%;top:0.3%;}
+	50% {left: 60.6%;top: 1.3%;}
+	75% {left: 48.6%;top: 0.3%;}
+	100%{left: 60.6%;top: -2.5%;}
+}
+@keyframes moveFive
+{
+	0% {transform:translateX(0%)}
+	100% {transform:translateX(0.8%)}
+}
+
+@-moz-keyframes moveFive /* Firefox */
+{
+	0% {-moz-transform:translateX(0%)}
+	100% {-moz-transform:translateX(0.8%)}
+}
+
+@-webkit-keyframes moveFive /* Safari 和 Chrome */
+{
+	0% {-webkit-transform:translateX(0%)}
+	100% {-webkit-transform:translateX(0.8%)}
+}
+
+@keyframes moveSix
+{
+	0% {transform:rotateZ(0deg)}
+	5% {transform:rotateZ(180deg)}
+	45% {transform:rotateZ(180deg)}
+	50% {transform:rotateZ(360deg)}
+	100% {transform:rotateZ(360deg)}
+}
+
+@-moz-keyframes moveSix /* Firefox */
+{
+	0% {-moz-transform:rotateZ(0deg)}
+	5% {-moz-transform:rotateZ(180deg)}
+	94% {-moz-transform:rotateZ(180deg)}
+	95% {-moz-transform:rotateZ(360deg)}
+	100% {-moz-transform:rotateZ(360deg)}
+}
+
+@-webkit-keyframes moveSix /* Safari 和 Chrome */
+{
+	0% {-webkit-transform:rotateZ(0deg)}
+	5% {-webkit-transform:rotateZ(180deg)}
+	45% {-webkit-transform:rotateZ(180deg)}
+	50% {-webkit-transform:rotateZ(360deg)}
+	100% {-webkit-transform:rotateZ(360deg)}
+}
+@keyframes movesever
+{
+	0% {transform:scale(1,1);opacity: 1}
+	100% {transform:scale(3.1,3.1);opacity: 0}
+}
+
+@-moz-keyframes movesever /* Firefox */
+{
+	0% {-moz-transform:scale(1,1);opacity: 1}
+	100% {-moz-transform:scale(3.1,3.1);opacity: 0}
+}
+
+@-webkit-keyframes movesever  /* Safari 和 Chrome */
+{
+	0% {-webkit-transform:scale(1,1);opacity: 1}
+	100% {-webkit-transform:scale(3.1,3.1);opacity: 0}
+}
+@keyframes moveeight
+{
+	0% {transform:translateX(0px);}
+	100% {transform:translateX(10px);}
+}
+
+@-moz-keyframes moveeight /* Firefox */
+{
+	0% {-moz-transform:translateX(0px)}
+	100% {-moz-transform:stranslateX(10px)}
+}
+
+@-webkit-keyframes moveeight  /* Safari 和 Chrome */
+{
+	0% {-webkit-transform:stranslateX(0px)}
+	100% {-webkit-transform:translateX(10px)}
+}
+@keyframes movenine
+{
+	0% {left: 2.4%;top: 18%;}
+	100% {left: 50.4%;top: 3.0%;}
+}
+
+@-moz-keyframes movenine /* Firefox */
+{
+	0% {left: 2.4%;top: 18%;}
+	100% {left: 50.4%;top: 3.0%;}
+}
+
+@-webkit-keyframes movenine  /* Safari 和 Chrome */
+{
+	0% {left: 2.4%;top: 18%;}
+	100% {left: 50.4%;top: 3.0%;}
+}
+.cfs_fadeIn{animation-name:cfs_fadeIn;animation-duration:0.75s;-webkit-animation-name:cfs_fadeIn;-webkit-animation-duration:0.75s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes cfs_fadeIn{0%{opacity:0;-webkit-transform:scale3d(0.3, 0.3, 0.3)}90%,100%{opacity:1;-webkit-transform:scale3d(1, 1, 1)}}@keyframes cfs_fadeIn{0%{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}90%,100%{opacity:1;transform:scale3d(1, 1, 1)}}
+.cfs_fadeInLeft{animation-name:cfs_fadeInLeft;animation-duration:0.75s;-webkit-animation-name:cfs_fadeInLeft;-webkit-animation-duration:0.75s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes cfs_fadeInLeft{0%{opacity:0;-webkit-transform:translateX(-100%)}90%,100%{opacity:1;-webkit-transform:none}}@keyframes cfs_fadeInLeft{0%{opacity:0;transform:translateX(-100%)}90%,100%{opacity:1;transform:none}}
+.cfs_lightSpeedInRight{animation-name:cfs_lightSpeedInRight;animation-duration:0.75s;animation-timing-function:ease-out;-webkit-animation-name:cfs_lightSpeedInRight;-webkit-animation-duration:0.75s;-webkit-animation-timing-function:ease-out;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes cfs_lightSpeedInRight{0%{opacity:0;-webkit-transform:translateX(300px) skewX(-30deg)}60%{opacity:1;-webkit-transform:skewX(20deg)}80%{-webkit-transform:skewX(-5deg)}100%{opacity:1;-webkit-transform:none}}@keyframes cfs_lightSpeedInRight{0%{opacity:0;transform:translateX(300px) skewX(-30deg)}60%{opacity:1;transform:skewX(20deg)}80%{transform:skewX(-5deg)}100%{opacity:1;transform:none}}
+.cfs_lightSpeedIn{animation-name:cfs_lightSpeedIn;animation-duration:0.5s;animation-timing-function:ease-out;-webkit-animation-name:cfs_lightSpeedIn;-webkit-animation-duration:0.5s;-webkit-animation-timing-function:ease-out;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes cfs_lightSpeedIn{0%{opacity:0;-webkit-transform:scale3d(0.3, 0.3, 0.3)}60%{opacity:1;-webkit-transform:scale3d(1.1, 1.1, 1.1)}80%{-webkit-transform:scale3d(0.9, 0.9, 0.9)}100%{opacity:1;-webkit-transform:scale3d(1, 1, 1)}}@keyframes cfs_lightSpeedIn{0%{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}60%{opacity:1;transform:scale3d(1.1, 1.1, 1.1)}80%{transform:scale3d(0.9, 0.9, 0.9)}100%{opacity:1;transform:scale3d(1, 1, 1)}}
+.cfs_fadeInDown{animation-name:cfs_fadeInDown;animation-duration:0.75s;-webkit-animation-name:cfs_fadeInDown;-webkit-animation-duration:0.75s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes cfs_fadeInDown{0%{opacity:0;-webkit-transform:translateY(100%)}90%,100%{opacity:1;-webkit-transform:none}}@keyframes cfs_fadeInDown{0%{opacity:0;transform:translateY(100%)}90%,100%{opacity:1;transform:none}}
+.cfs_fadeInUp{animation-name:cfs_fadeInUp;animation-duration:0.75s;-webkit-animation-name:cfs_fadeInUp;-webkit-animation-duration:0.75s;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards}@-webkit-keyframes cfs_fadeInUp{0%{opacity:0;-webkit-transform:translateY(-100%)}90%,100%{opacity:1;-webkit-transform:none}}@keyframes cfs_fadeInUp{0%{opacity:0;transform:translateY(-100%)}90%,100%{opacity:1;transform:none}}
